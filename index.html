@@ -17,6 +17,11 @@
       animation: pulse-glow 4s ease-in-out infinite;
     }
     [v-cloak] { display: none; }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.6); }
+    ::-webkit-scrollbar-thumb { background: rgba(51, 65, 85, 0.8); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(71, 85, 105, 1); }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white">
@@ -41,7 +46,8 @@
       <div class="flex items-center space-x-3">
         <button 
           @click="showTokenModal = true"
-          class="text-xs px-3 py-1.5 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 transition flex items-center gap-1.5"
+          class="text-xs px-3 py-1.5 rounded-lg border transition flex items-center gap-1.5"
+          :class="token ? 'bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border-indigo-500/30' : 'bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border-amber-500/40 animate-pulse'"
         >
           <span>🔑</span> {{ token ? '已配置授权令牌' : '配置 GitHub Token' }}
         </button>
@@ -57,7 +63,7 @@
     </div>
   </header>
 
-  <!-- Token Modal -->
+  <!-- Token Settings Modal -->
   <div v-if="showTokenModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
       <div class="flex items-center justify-between">
@@ -175,6 +181,27 @@
         </form>
       </div>
 
+      <!-- Quick Template Presets -->
+      <div class="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-5 space-y-3">
+        <h3 class="text-xs font-semibold text-slate-300 uppercase tracking-wider">⚡ 快速填充文案范例</h3>
+        <div class="grid grid-cols-2 gap-2">
+          <button 
+            @click="fillPreset(1)" 
+            class="text-left p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-indigo-500/50 transition text-xs space-y-1"
+          >
+            <div class="font-semibold text-indigo-300">科技资讯速报</div>
+            <div class="text-slate-400 line-clamp-1">AI 自动化短视频发布...</div>
+          </button>
+          <button 
+            @click="fillPreset(2)" 
+            class="text-left p-2.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-sky-500/50 transition text-xs space-y-1"
+          >
+            <div class="font-semibold text-sky-300">知识科普解说</div>
+            <div class="text-slate-400 line-clamp-1">为什么代码转视频比...</div>
+          </button>
+        </div>
+      </div>
+
       <!-- Tips Card -->
       <div class="bg-slate-900/40 border border-slate-800/60 rounded-xl p-4 text-xs text-slate-400 space-y-2">
         <div class="font-semibold text-slate-300 flex items-center gap-1.5">
@@ -182,125 +209,201 @@
         </div>
         <p>1. 点击触发后，任务直接进入 GitHub Actions 4核 CPU 云端虚拟机队列。</p>
         <p>2. 虚拟机自动执行 Edge-TTS 语音合成与 Remotion 逐帧渲染，耗时约 1~2 分钟。</p>
-        <p>3. 成片生成后自动上传至 Releases，右侧面板将秒级刷新并可直接内嵌播放与下载！</p>
+        <p>3. 渲染完成后自动生成全球 CDN 永久直链，下方历史列表与播放器可即时预览！</p>
       </div>
     </div>
 
     <!-- Right Column: Live Monitor & Video Showcase (7 cols) -->
     <div class="lg:col-span-7 space-y-6">
 
-      <!-- Section 1: Active Rendering Tasks -->
-      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl">
-        <div class="flex items-center justify-between mb-4">
-          <h2 class="text-base font-semibold text-white flex items-center gap-2">
-            <span class="text-sky-400">⏳</span> 云端渲染任务追踪
-          </h2>
+      <!-- Section 1: Active Rendering Tasks (Only shows progress or recent status) -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-xl">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-2">
+            <h2 class="text-sm font-semibold text-white flex items-center gap-2">
+              <span class="text-sky-400">⏳</span> 云端任务进度
+            </h2>
+            <span v-if="hasActiveTask" class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-500/20 text-amber-300 animate-pulse border border-amber-500/30">
+              云端渲染中
+            </span>
+            <span v-else class="px-2 py-0.5 rounded-full text-[10px] font-medium bg-slate-800 text-slate-400">
+              空闲待命中
+            </span>
+          </div>
+
           <button 
-            @click="fetchRuns" 
-            class="text-xs text-slate-400 hover:text-white flex items-center gap-1 transition"
+            @click="manualRefresh" 
+            :disabled="isRefreshing"
+            class="text-xs px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700/60 flex items-center gap-1 transition"
           >
-            <span>🔄</span> 刷新状态
+            <span :class="{ 'animate-spin': isRefreshing }">🔄</span>
+            <span>刷新</span>
           </button>
         </div>
 
-        <div v-if="runsLoading" class="py-6 text-center text-slate-500 text-sm">
-          正在获取 GitHub Actions 调度状态...
+        <div v-if="recentRuns.length === 0" class="py-4 text-center text-slate-500 text-xs">
+          暂无任务记录，点击左侧按钮即可触发首次渲染！
         </div>
 
-        <div v-else-if="recentRuns.length === 0" class="py-8 text-center text-slate-500 text-sm">
-          暂无正在运行的任务，点击左侧按钮即可触发首次渲染！
-        </div>
-
-        <div v-else class="space-y-3">
+        <div v-else class="space-y-2">
           <div 
-            v-for="run in recentRuns.slice(0, 3)" 
+            v-for="run in recentRuns.slice(0, 2)" 
             :key="run.id"
-            class="p-4 rounded-xl border transition flex items-center justify-between"
+            class="p-3 rounded-xl border transition flex items-center justify-between text-xs"
             :class="{
-              'bg-amber-500/5 border-amber-500/20': run.status === 'in_progress',
-              'bg-blue-500/5 border-blue-500/20': run.status === 'queued',
-              'bg-emerald-500/5 border-emerald-500/20': run.conclusion === 'success',
-              'bg-red-500/5 border-red-500/20': run.conclusion === 'failure'
+              'bg-amber-500/10 border-amber-500/30 text-amber-200': run.status === 'in_progress',
+              'bg-blue-500/10 border-blue-500/30 text-blue-200': run.status === 'queued',
+              'bg-slate-950/60 border-slate-800/80 text-slate-300': run.conclusion === 'success' || run.status === 'completed'
             }"
           >
-            <div class="space-y-1">
-              <div class="flex items-center gap-2">
-                <span 
-                  class="w-2.5 h-2.5 rounded-full"
-                  :class="{
-                    'bg-amber-400 animate-pulse': run.status === 'in_progress',
-                    'bg-blue-400 animate-pulse': run.status === 'queued',
-                    'bg-emerald-400': run.conclusion === 'success',
-                    'bg-red-400': run.conclusion === 'failure'
-                  }"
-                ></span>
-                <span class="text-sm font-semibold text-white">Run #{{ run.run_number }}: {{ run.display_title || 'Video Render' }}</span>
-              </div>
-              <div class="text-xs text-slate-400">
-                触发时间: {{ formatTime(run.created_at) }} · 
-                <span v-if="run.status === 'in_progress'" class="text-amber-400 font-medium">云端 Chromium 渲染中...</span>
-                <span v-else-if="run.status === 'queued'" class="text-blue-400">排队准备中...</span>
-                <span v-else-if="run.conclusion === 'success'" class="text-emerald-400 font-medium">渲染完成 (成片已生成)</span>
-                <span v-else class="text-red-400">运行异常</span>
+            <div class="flex items-center gap-2.5 overflow-hidden">
+              <span 
+                class="w-2.5 h-2.5 rounded-full flex-shrink-0"
+                :class="{
+                  'bg-amber-400 animate-pulse': run.status === 'in_progress',
+                  'bg-blue-400 animate-pulse': run.status === 'queued',
+                  'bg-emerald-400': run.conclusion === 'success',
+                  'bg-red-400': run.conclusion === 'failure'
+                }"
+              ></span>
+              <div class="truncate">
+                <span class="font-semibold text-white mr-1.5">Run #{{ run.run_number }}</span>
+                <span class="text-slate-400 truncate">{{ run.display_title || 'Video Render' }}</span>
               </div>
             </div>
 
-            <a 
-              :href="run.html_url" 
-              target="_blank" 
-              class="text-xs px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition"
-            >
-              查看 Actions 日志 →
-            </a>
+            <div class="flex items-center gap-3 flex-shrink-0">
+              <span v-if="run.status === 'in_progress'" class="text-amber-400 font-medium">渲染中 ⏳</span>
+              <span v-else-if="run.status === 'queued'" class="text-blue-400">排队中 ⌛</span>
+              <span v-else-if="run.conclusion === 'success'" class="text-emerald-400 font-medium">完成 ✅</span>
+              <span v-else class="text-red-400">失败 ❌</span>
+
+              <a 
+                :href="run.html_url" 
+                target="_blank" 
+                class="text-[11px] px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition"
+              >
+                日志 ↗
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Section 2: Rendered Video Gallery -->
-      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl">
-        <div class="flex items-center justify-between mb-4">
-          <h2 class="text-base font-semibold text-white flex items-center gap-2">
-            <span class="text-pink-400">🎬</span> 成片媒体库与在线播放
-          </h2>
-          <span class="text-xs text-slate-400">{{ releases.length }} 支高清视频</span>
-        </div>
+      <!-- Section 2: Master Cinema Player (Focused Video Preview) -->
+      <div v-if="currentVideo" class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-xs px-2.5 py-1 rounded-full bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 font-semibold flex items-center gap-1">
+              <span>▶️</span> 正在预览
+            </span>
+            <h2 class="text-base font-bold text-white truncate max-w-md">{{ currentVideo.title }}</h2>
+          </div>
 
-        <div v-if="releasesLoading" class="py-8 text-center text-slate-500 text-sm">
-          正在加载成片列表...
-        </div>
-
-        <div v-else-if="releases.length === 0" class="py-12 text-center text-slate-500 text-sm">
-          暂无生成视频。左侧提交任务后，生成的成片将自动出现在这里并可直接播放！
-        </div>
-
-        <div v-else class="space-y-6">
-          <div 
-            v-for="rel in releases" 
-            :key="rel.id"
-            class="bg-slate-950 border border-slate-800/80 rounded-xl p-4 shadow-lg space-y-3"
+          <a 
+            :href="currentVideo.downloadUrl" 
+            download
+            class="text-xs px-3 py-1.5 rounded-xl bg-gradient-to-r from-indigo-600 to-sky-600 hover:from-indigo-500 hover:to-sky-500 text-white font-medium shadow-md shadow-indigo-600/20 transition flex items-center gap-1.5"
           >
-            <div class="flex items-center justify-between">
-              <div>
-                <h3 class="text-sm font-bold text-white">{{ rel.name }}</h3>
-                <p class="text-xs text-slate-400">{{ formatTime(rel.published_at) }}</p>
+            <span>⬇️</span> 下载成片 MP4
+          </a>
+        </div>
+
+        <!-- Stable Non-Remounting Video Player -->
+        <div class="rounded-xl overflow-hidden border border-slate-800/90 bg-black aspect-video flex items-center justify-center shadow-2xl relative">
+          <video 
+            ref="masterVideo"
+            :key="currentVideo.id"
+            :src="currentVideo.downloadUrl" 
+            controls 
+            autoplay
+            preload="auto"
+            class="w-full h-full object-contain"
+          ></video>
+        </div>
+
+        <div class="flex items-center justify-between text-xs text-slate-400 pt-1">
+          <div class="flex items-center gap-3">
+            <span>🏷️ 标签: <strong class="text-slate-300">{{ currentVideo.tag }}</strong></span>
+            <span>📅 发布时间: {{ currentVideo.time }}</span>
+          </div>
+          <span class="text-slate-500">点击下方历史列表可随时切换任意视频 ↗</span>
+        </div>
+      </div>
+
+      <!-- Section 3: Historical Video Library (Browse & Play Any Past Video) -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <h2 class="text-base font-semibold text-white flex items-center gap-2">
+              <span class="text-pink-400">🎬</span> 历史成片视频库
+            </h2>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-medium">
+              共 {{ videoList.length }} 支
+            </span>
+          </div>
+
+          <!-- Search filter -->
+          <div class="w-48">
+            <input 
+              v-model="searchQuery" 
+              type="text" 
+              placeholder="搜索历史成片..." 
+              class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500"
+            />
+          </div>
+        </div>
+
+        <div v-if="filteredVideos.length === 0" class="py-10 text-center text-slate-500 text-xs">
+          没有找到匹配的视频。
+        </div>
+
+        <!-- Video Cards Grid -->
+        <div v-else class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[420px] overflow-y-auto pr-1">
+          <div 
+            v-for="v in filteredVideos" 
+            :key="v.id"
+            @click="selectVideo(v)"
+            class="p-3.5 rounded-xl border cursor-pointer transition flex flex-col justify-between group"
+            :class="currentVideo && currentVideo.id === v.id 
+              ? 'bg-indigo-950/40 border-indigo-500/70 shadow-lg shadow-indigo-900/30 ring-1 ring-indigo-500/50' 
+              : 'bg-slate-950 border-slate-800/80 hover:border-slate-700 hover:bg-slate-900/80'"
+          >
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] px-2 py-0.5 rounded-md font-semibold bg-slate-800 text-slate-300">
+                  {{ v.tag }}
+                </span>
+                <span v-if="currentVideo && currentVideo.id === v.id" class="text-[10px] text-indigo-400 font-bold flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-ping"></span> 播放中
+                </span>
               </div>
-              <a 
-                :href="getVideoDownloadUrl(rel)" 
-                download
-                class="text-xs px-3 py-1.5 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 font-medium transition flex items-center gap-1.5"
-              >
-                <span>⬇️</span> 下载成片 MP4
-              </a>
+              <h4 class="text-xs font-bold text-white group-hover:text-indigo-300 transition line-clamp-1">
+                {{ v.title }}
+              </h4>
+              <p class="text-[11px] text-slate-400 line-clamp-2 leading-relaxed">
+                {{ v.notes || '云端脱机极速渲染 MP4 高清成片。' }}
+              </p>
             </div>
 
-            <!-- Video Player -->
-            <div class="rounded-lg overflow-hidden border border-slate-800 bg-black aspect-video flex items-center justify-center">
-              <video 
-                :src="getVideoDownloadUrl(rel)" 
-                controls 
-                preload="metadata"
-                class="w-full h-full object-contain"
-              ></video>
+            <div class="flex items-center justify-between pt-3 mt-2 border-t border-slate-900 text-[11px] text-slate-500">
+              <span>{{ v.time }}</span>
+              <div class="flex items-center gap-2">
+                <button 
+                  @click.stop="selectVideo(v)" 
+                  class="text-indigo-400 hover:text-indigo-300 font-medium"
+                >
+                  ▶ 播放
+                </button>
+                <a 
+                  :href="v.downloadUrl" 
+                  download 
+                  @click.stop
+                  class="text-slate-400 hover:text-white"
+                >
+                  ⬇ 下载
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -312,7 +415,7 @@
 </div>
 
 <script>
-const { createApp, ref, onMounted } = Vue;
+const { createApp, ref, computed, onMounted } = Vue;
 
 createApp({
   setup() {
@@ -325,22 +428,22 @@ createApp({
       token.value = tokenInput.value.trim();
       localStorage.setItem('gh_token', token.value);
       showTokenModal.value = false;
-      fetchRuns();
-      fetchReleases();
+      manualRefresh();
     };
 
     const form = ref({
-      title: 'Remotion 云端脱机渲染实验',
-      subtitle: '微软神经网络配音 · React 响应式动效 · 零本地负载',
-      text: '欢迎使用由 GitHub Actions 驱动的云端视频渲染管理系统！这是一段由网页代码全自动生成的演示视频，零人工剪辑，秒级出片！',
+      title: '科技早报 · AI 自动化视频',
+      subtitle: '全自动云端脱机渲染 · 零人工剪辑',
+      text: '欢迎来到自动化视频实验室！本视频完全由网页代码在 GitHub Actions 云端虚拟机渲染生成，结合了微软神经网络语音合成与响应式弹性动效，秒级出片，直通网盘！',
       voice: 'zh-CN-YunxiNeural'
     });
 
     const isSubmitting = ref(false);
-    const runsLoading = ref(true);
-    const releasesLoading = ref(true);
+    const isRefreshing = ref(false);
     const recentRuns = ref([]);
     const releases = ref([]);
+    const currentVideo = ref(null);
+    const searchQuery = ref('');
 
     const voices = [
       { id: 'zh-CN-YunxiNeural', name: '云希', desc: '阳光青年 · 影视解说/科技', lang: '中文普通话' },
@@ -360,9 +463,47 @@ createApp({
       return h;
     };
 
+    // Parse releases into unified video objects
+    const videoList = computed(() => {
+      return releases.value.map(rel => {
+        let downloadUrl = `https://github.com/${repo}/releases/download/${rel.tag_name}/video.mp4`;
+        if (rel.assets && rel.assets.length > 0) {
+          const mp4 = rel.assets.find(a => a.name.endsWith('.mp4'));
+          if (mp4) downloadUrl = mp4.browser_download_url;
+        }
+
+        return {
+          id: rel.id,
+          tag: rel.tag_name,
+          title: rel.name || rel.tag_name,
+          notes: rel.body || '',
+          time: formatTime(rel.published_at || rel.created_at),
+          downloadUrl
+        };
+      });
+    });
+
+    const filteredVideos = computed(() => {
+      if (!searchQuery.value.trim()) return videoList.value;
+      const q = searchQuery.value.toLowerCase();
+      return videoList.value.filter(v => 
+        v.title.toLowerCase().includes(q) || 
+        v.notes.toLowerCase().includes(q) ||
+        v.tag.toLowerCase().includes(q)
+      );
+    });
+
+    const hasActiveTask = computed(() => {
+      return recentRuns.value.some(r => r.status === 'in_progress' || r.status === 'queued');
+    });
+
+    const selectVideo = (video) => {
+      currentVideo.value = video;
+    };
+
+    // Silent background fetch for runs (NO FLICKER, NO DOM TEARDOWN)
     const fetchRuns = async () => {
       try {
-        runsLoading.value = true;
         const res = await fetch(`https://api.github.com/repos/${repo}/actions/runs?per_page=5`, {
           headers: getHeaders()
         });
@@ -371,27 +512,41 @@ createApp({
           recentRuns.value = data.workflow_runs || [];
         }
       } catch (err) {
-        console.error('Failed to fetch runs', err);
-      } finally {
-        runsLoading.value = false;
+        console.warn('Failed to fetch runs', err);
       }
     };
 
+    // Silent background fetch for releases (NO FLICKER, NO VIDEO PLAYBACK RESET)
     const fetchReleases = async () => {
       try {
-        releasesLoading.value = true;
-        const res = await fetch(`https://api.github.com/repos/${repo}/releases?per_page=10`, {
+        const res = await fetch(`https://api.github.com/repos/${repo}/releases?per_page=30`, {
           headers: getHeaders()
         });
         if (res.ok) {
           const data = await res.json();
-          releases.value = data || [];
+          const newReleases = data || [];
+          
+          // Compare IDs to avoid unnecessary reactive mutations
+          const currentIds = releases.value.map(r => r.id).join(',');
+          const newIds = newReleases.map(r => r.id).join(',');
+          
+          if (currentIds !== newIds) {
+            releases.value = newReleases;
+            // If no video is selected yet, default to the latest one
+            if (!currentVideo.value && videoList.value.length > 0) {
+              currentVideo.value = videoList.value[0];
+            }
+          }
         }
       } catch (err) {
-        console.error('Failed to fetch releases', err);
-      } finally {
-        releasesLoading.value = false;
+        console.warn('Failed to fetch releases', err);
       }
+    };
+
+    const manualRefresh = async () => {
+      isRefreshing.value = true;
+      await Promise.all([fetchRuns(), fetchReleases()]);
+      isRefreshing.value = false;
     };
 
     const dispatchRender = async () => {
@@ -437,12 +592,18 @@ createApp({
       }
     };
 
-    const getVideoDownloadUrl = (release) => {
-      if (release.assets && release.assets.length > 0) {
-        const mp4 = release.assets.find(a => a.name.endsWith('.mp4'));
-        if (mp4) return mp4.browser_download_url;
+    const fillPreset = (type) => {
+      if (type === 1) {
+        form.value.title = 'AI 自动化短视频发布';
+        form.value.subtitle = '代码驱动动态渲染 · 微软神经配音';
+        form.value.text = '重大突破！全新的全自动视频生产流水线已正式上线，无需人工剪辑，无需高配电脑，只需输入文案，云端直接输出 1080P 高清成片！';
+        form.value.voice = 'zh-CN-YunxiNeural';
+      } else if (type === 2) {
+        form.value.title = '代码转视频硬核解析';
+        form.value.subtitle = 'Remotion 逐帧栅格化底层原理';
+        form.value.text = '传统视频需要繁琐的剪辑软件与渲染等待。而 Remotion 将每一帧视频都变成了一个 React 组件，像素级精确，支持弹性物理动画与音频频谱同步！';
+        form.value.voice = 'zh-CN-YunjianNeural';
       }
-      return `https://github.com/${repo}/releases/download/${release.tag_name}/video.mp4`;
     };
 
     const playVoicePreview = () => {
@@ -461,14 +622,16 @@ createApp({
       return d.toLocaleString('zh-CN', { hour12: false });
     };
 
-    onMounted(() => {
-      fetchRuns();
-      fetchReleases();
-      // Auto-poll every 12 seconds
+    onMounted(async () => {
+      await Promise.all([fetchRuns(), fetchReleases()]);
+
+      // Smart polling: ONLY poll if there is an active task running
       setInterval(() => {
-        fetchRuns();
-        fetchReleases();
-      }, 12000);
+        if (hasActiveTask.value) {
+          fetchRuns();
+          fetchReleases();
+        }
+      }, 8000);
     });
 
     return {
@@ -480,13 +643,18 @@ createApp({
       form,
       voices,
       isSubmitting,
-      runsLoading,
-      releasesLoading,
+      isRefreshing,
       recentRuns,
       releases,
+      videoList,
+      filteredVideos,
+      currentVideo,
+      hasActiveTask,
+      searchQuery,
+      selectVideo,
       dispatchRender,
-      fetchRuns,
-      getVideoDownloadUrl,
+      manualRefresh,
+      fillPreset,
       playVoicePreview,
       formatTime
     };
