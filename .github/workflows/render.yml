@@ -1,0 +1,121 @@
+name: Cloud Video Render
+
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: 'Video Title'
+        required: true
+        default: 'AI 自动化云端视频工作台'
+      subtitle:
+        description: 'Video Subtitle'
+        required: true
+        default: 'GitHub Actions 自动脱机渲染 · 零本地负载'
+      text:
+        description: 'Voiceover Text / Script'
+        required: true
+        default: '欢迎使用由 GitHub Actions 驱动的云端视频渲染服务。代码驱动动画，神经网络配音，全自动渲染并直接输出高清 MP4 视频！'
+      voice:
+        description: 'TTS Voice Identifier'
+        required: true
+        default: 'zh-CN-YunxiNeural'
+        type: choice
+        options:
+          - 'zh-CN-YunxiNeural'
+          - 'zh-CN-XiaoxiaoNeural'
+          - 'zh-CN-YunjianNeural'
+          - 'zh-CN-XiaoyiNeural'
+          - 'zh-CN-XiaobeiNeural'
+          - 'en-US-GuyNeural'
+          - 'en-US-JennyNeural'
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install System Dependencies (Chromium & FFmpeg)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq \
+            ffmpeg \
+            libnss3 \
+            libatk-bridge2.0-0 \
+            libdrm2 \
+            libxkbcommon0 \
+            libgbm1 \
+            libxcomposite1 \
+            libxcursor1 \
+            libxdamage1 \
+            libxi6 \
+            libxtst6 \
+            libcups2 \
+            libxss1 \
+            libxrandr2 \
+            libasound2t64 \
+            libpango-1.0-0 \
+            libcairo2 \
+            fonts-noto-cjk
+
+      - name: Install Python Dependencies
+        run: |
+          pip install edge-tts
+
+      - name: Install NPM Dependencies
+        run: |
+          npm install
+
+      - name: Generate TTS Audio & Composition Metadata
+        run: |
+          python generate_tts.py \
+            --title "${{ inputs.title }}" \
+            --subtitle "${{ inputs.subtitle }}" \
+            --text "${{ inputs.text }}" \
+            --voice "${{ inputs.voice }}" \
+            --output-dir "public"
+
+      - name: Render Video with Remotion
+        run: |
+          mkdir -p out
+          npx remotion render src/index.ts CloudVideo out/video.mp4 \
+            --props=public/metadata.json \
+            --concurrency=2 \
+            --gl=angle \
+            --log=info
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-video-${{ github.run_id }}
+          path: out/video.mp4
+          retention-days: 14
+
+      - name: Create GitHub Release & Upload Asset
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG_NAME="run-${{ github.run_id }}"
+          gh release create "$TAG_NAME" out/video.mp4 \
+            --title "${{ inputs.title }} (Run #${{ github.run_id }})" \
+            --notes "🎬 Rendered via GitHub Actions.
+            - **Title**: ${{ inputs.title }}
+            - **Voice**: ${{ inputs.voice }}
+            - **Timestamp**: $(date -u)
+            - **Direct Download**: https://github.com/${{ github.repository }}/releases/download/$TAG_NAME/video.mp4"

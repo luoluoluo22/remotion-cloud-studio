@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remotion Cloud Studio · 云端视频渲染工作台</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Vue 3 CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <style>
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.05); }
+    }
+    .glow-effect {
+      animation: pulse-glow 4s ease-in-out infinite;
+    }
+    [v-cloak] { display: none; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+<div id="app" v-cloak class="min-h-screen flex flex-col">
+  <!-- Top Navigation -->
+  <header class="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-sky-500 to-pink-500 flex items-center justify-center shadow-lg shadow-indigo-500/20">
+          <span class="text-xl">⚡</span>
+        </div>
+        <div>
+          <h1 class="text-lg font-bold bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+            Remotion Cloud Studio
+          </h1>
+          <p class="text-xs text-slate-400 font-medium">网页转视频 · GitHub Actions 免费脱机渲染</p>
+        </div>
+      </div>
+
+      <!-- Header Right Badges -->
+      <div class="flex items-center space-x-3">
+        <button 
+          @click="showTokenModal = true"
+          class="text-xs px-3 py-1.5 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 transition flex items-center gap-1.5"
+        >
+          <span>🔑</span> {{ token ? '已配置授权令牌' : '配置 GitHub Token' }}
+        </button>
+        <div class="hidden sm:flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2 animate-ping"></span>
+          云端引擎在线
+        </div>
+        <a :href="`https://github.com/${repo}`" target="_blank" class="text-xs px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700/60 transition flex items-center gap-1.5">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          {{ repo }}
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Token Modal -->
+  <div v-if="showTokenModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between">
+        <h3 class="text-base font-semibold text-white flex items-center gap-2">
+          <span>🔑</span> 配置 GitHub 个人访问令牌
+        </h3>
+        <button @click="showTokenModal = false" class="text-slate-400 hover:text-white">&times;</button>
+      </div>
+      <p class="text-xs text-slate-400">
+        用于调用 GitHub API 触发 Actions 渲染工作流。Token 仅保存在你的浏览器本地（localStorage），安全无泄漏。
+      </p>
+      <div>
+        <label class="block text-xs font-medium text-slate-300 mb-1">GitHub Personal Access Token (PAT)</label>
+        <input 
+          v-model="tokenInput" 
+          type="password" 
+          placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" 
+          class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500"
+        />
+      </div>
+      <div class="flex justify-end gap-2 pt-2">
+        <button @click="showTokenModal = false" class="px-4 py-2 rounded-xl text-xs bg-slate-800 hover:bg-slate-700 text-slate-300">取消</button>
+        <button @click="saveToken" class="px-4 py-2 rounded-xl text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white">保存令牌</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Layout -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+    
+    <!-- Left Column: Creation Studio Form (5 cols) -->
+    <div class="lg:col-span-5 space-y-6">
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl relative overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="text-base font-semibold text-white flex items-center gap-2">
+            <span class="text-indigo-400">📝</span> 视频创作工作台
+          </h2>
+          <span class="text-xs text-slate-400">Remotion 1080P/720P 模版</span>
+        </div>
+
+        <form @submit.prevent="dispatchRender" class="space-y-4">
+          <!-- Video Title -->
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1.5">视频主标题 (Title)</label>
+            <input 
+              v-model="form.title" 
+              type="text" 
+              required
+              class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition"
+              placeholder="例如：科技早报 · AI 自动化视频"
+            />
+          </div>
+
+          <!-- Video Subtitle -->
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1.5">视频副标题 (Subtitle)</label>
+            <input 
+              v-model="form.subtitle" 
+              type="text" 
+              required
+              class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition"
+              placeholder="例如：全自动云端脱机渲染 · 零人工剪辑"
+            />
+          </div>
+
+          <!-- TTS Voice Selection -->
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="block text-xs font-medium text-slate-300">神经网络配音角色 (Neural Voice)</label>
+              <button 
+                type="button" 
+                @click="playVoicePreview"
+                class="text-xs text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-medium"
+              >
+                <span>🔊</span> 试听所选音色
+              </button>
+            </div>
+            <select 
+              v-model="form.voice" 
+              class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition"
+            >
+              <option v-for="v in voices" :key="v.id" :value="v.id">
+                {{ v.name }} - {{ v.desc }} ({{ v.lang }})
+              </option>
+            </select>
+          </div>
+
+          <!-- Voiceover Script -->
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="block text-xs font-medium text-slate-300">口播文案 / 剧本内容 (Script)</label>
+              <span class="text-xs text-slate-500">{{ form.text.length }} 字</span>
+            </div>
+            <textarea 
+              v-model="form.text" 
+              rows="4" 
+              required
+              class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition resize-none"
+              placeholder="输入你想让视频播报的完整文本..."
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button 
+            type="submit" 
+            :disabled="isSubmitting"
+            class="w-full py-3.5 px-4 rounded-xl font-semibold text-sm bg-gradient-to-r from-indigo-600 via-sky-600 to-indigo-600 hover:from-indigo-500 hover:via-sky-500 hover:to-indigo-500 text-white shadow-lg shadow-indigo-600/30 transition transform active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          >
+            <span v-if="isSubmitting" class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+            <span v-else>🚀</span>
+            {{ isSubmitting ? '正在唤醒 GitHub Actions 云端渲染...' : '立即触发云端脱机渲染' }}
+          </button>
+        </form>
+      </div>
+
+      <!-- Tips Card -->
+      <div class="bg-slate-900/40 border border-slate-800/60 rounded-xl p-4 text-xs text-slate-400 space-y-2">
+        <div class="font-semibold text-slate-300 flex items-center gap-1.5">
+          <span>💡</span> 云端渲染机制说明
+        </div>
+        <p>1. 点击触发后，任务直接进入 GitHub Actions 4核 CPU 云端虚拟机队列。</p>
+        <p>2. 虚拟机自动执行 Edge-TTS 语音合成与 Remotion 逐帧渲染，耗时约 1~2 分钟。</p>
+        <p>3. 成片生成后自动上传至 Releases，右侧面板将秒级刷新并可直接内嵌播放与下载！</p>
+      </div>
+    </div>
+
+    <!-- Right Column: Live Monitor & Video Showcase (7 cols) -->
+    <div class="lg:col-span-7 space-y-6">
+
+      <!-- Section 1: Active Rendering Tasks -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-base font-semibold text-white flex items-center gap-2">
+            <span class="text-sky-400">⏳</span> 云端渲染任务追踪
+          </h2>
+          <button 
+            @click="fetchRuns" 
+            class="text-xs text-slate-400 hover:text-white flex items-center gap-1 transition"
+          >
+            <span>🔄</span> 刷新状态
+          </button>
+        </div>
+
+        <div v-if="runsLoading" class="py-6 text-center text-slate-500 text-sm">
+          正在获取 GitHub Actions 调度状态...
+        </div>
+
+        <div v-else-if="recentRuns.length === 0" class="py-8 text-center text-slate-500 text-sm">
+          暂无正在运行的任务，点击左侧按钮即可触发首次渲染！
+        </div>
+
+        <div v-else class="space-y-3">
+          <div 
+            v-for="run in recentRuns.slice(0, 3)" 
+            :key="run.id"
+            class="p-4 rounded-xl border transition flex items-center justify-between"
+            :class="{
+              'bg-amber-500/5 border-amber-500/20': run.status === 'in_progress',
+              'bg-blue-500/5 border-blue-500/20': run.status === 'queued',
+              'bg-emerald-500/5 border-emerald-500/20': run.conclusion === 'success',
+              'bg-red-500/5 border-red-500/20': run.conclusion === 'failure'
+            }"
+          >
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span 
+                  class="w-2.5 h-2.5 rounded-full"
+                  :class="{
+                    'bg-amber-400 animate-pulse': run.status === 'in_progress',
+                    'bg-blue-400 animate-pulse': run.status === 'queued',
+                    'bg-emerald-400': run.conclusion === 'success',
+                    'bg-red-400': run.conclusion === 'failure'
+                  }"
+                ></span>
+                <span class="text-sm font-semibold text-white">Run #{{ run.run_number }}: {{ run.display_title || 'Video Render' }}</span>
+              </div>
+              <div class="text-xs text-slate-400">
+                触发时间: {{ formatTime(run.created_at) }} · 
+                <span v-if="run.status === 'in_progress'" class="text-amber-400 font-medium">云端 Chromium 渲染中...</span>
+                <span v-else-if="run.status === 'queued'" class="text-blue-400">排队准备中...</span>
+                <span v-else-if="run.conclusion === 'success'" class="text-emerald-400 font-medium">渲染完成 (成片已生成)</span>
+                <span v-else class="text-red-400">运行异常</span>
+              </div>
+            </div>
+
+            <a 
+              :href="run.html_url" 
+              target="_blank" 
+              class="text-xs px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition"
+            >
+              查看 Actions 日志 →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Rendered Video Gallery -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-base font-semibold text-white flex items-center gap-2">
+            <span class="text-pink-400">🎬</span> 成片媒体库与在线播放
+          </h2>
+          <span class="text-xs text-slate-400">{{ releases.length }} 支高清视频</span>
+        </div>
+
+        <div v-if="releasesLoading" class="py-8 text-center text-slate-500 text-sm">
+          正在加载成片列表...
+        </div>
+
+        <div v-else-if="releases.length === 0" class="py-12 text-center text-slate-500 text-sm">
+          暂无生成视频。左侧提交任务后，生成的成片将自动出现在这里并可直接播放！
+        </div>
+
+        <div v-else class="space-y-6">
+          <div 
+            v-for="rel in releases" 
+            :key="rel.id"
+            class="bg-slate-950 border border-slate-800/80 rounded-xl p-4 shadow-lg space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="text-sm font-bold text-white">{{ rel.name }}</h3>
+                <p class="text-xs text-slate-400">{{ formatTime(rel.published_at) }}</p>
+              </div>
+              <a 
+                :href="getVideoDownloadUrl(rel)" 
+                download
+                class="text-xs px-3 py-1.5 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 font-medium transition flex items-center gap-1.5"
+              >
+                <span>⬇️</span> 下载成片 MP4
+              </a>
+            </div>
+
+            <!-- Video Player -->
+            <div class="rounded-lg overflow-hidden border border-slate-800 bg-black aspect-video flex items-center justify-center">
+              <video 
+                :src="getVideoDownloadUrl(rel)" 
+                controls 
+                preload="metadata"
+                class="w-full h-full object-contain"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<script>
+const { createApp, ref, onMounted } = Vue;
+
+createApp({
+  setup() {
+    const repo = 'luoluoluo22/remotion-cloud-studio';
+    const token = ref(localStorage.getItem('gh_token') || '');
+    const showTokenModal = ref(false);
+    const tokenInput = ref(token.value);
+
+    const saveToken = () => {
+      token.value = tokenInput.value.trim();
+      localStorage.setItem('gh_token', token.value);
+      showTokenModal.value = false;
+      fetchRuns();
+      fetchReleases();
+    };
+
+    const form = ref({
+      title: 'Remotion 云端脱机渲染实验',
+      subtitle: '微软神经网络配音 · React 响应式动效 · 零本地负载',
+      text: '欢迎使用由 GitHub Actions 驱动的云端视频渲染管理系统！这是一段由网页代码全自动生成的演示视频，零人工剪辑，秒级出片！',
+      voice: 'zh-CN-YunxiNeural'
+    });
+
+    const isSubmitting = ref(false);
+    const runsLoading = ref(true);
+    const releasesLoading = ref(true);
+    const recentRuns = ref([]);
+    const releases = ref([]);
+
+    const voices = [
+      { id: 'zh-CN-YunxiNeural', name: '云希', desc: '阳光青年 · 影视解说/科技', lang: '中文普通话' },
+      { id: 'zh-CN-XiaoxiaoNeural', name: '晓晓', desc: '温柔知性 · 科普/有声书', lang: '中文普通话' },
+      { id: 'zh-CN-YunjianNeural', name: '云健', desc: '沉稳大气 · 纪录片/深度剖析', lang: '中文普通话' },
+      { id: 'zh-CN-XiaoyiNeural', name: '晓伊', desc: '活泼甜美 · 二次元/资讯Vlog', lang: '中文普通话' },
+      { id: 'zh-CN-XiaobeiNeural', name: '晓北', desc: '幽默接地气 · 东北方言说书', lang: '东北方言' },
+      { id: 'en-US-GuyNeural', name: 'Guy', desc: '好莱坞史诗男声 · 科技大片', lang: '英语 (US)' },
+      { id: 'en-US-JennyNeural', name: 'Jenny', desc: '自然商务女声 · 国际对话', lang: '英语 (US)' }
+    ];
+
+    const getHeaders = () => {
+      const h = { 'Accept': 'application/vnd.github.v3+json' };
+      if (token.value) {
+        h['Authorization'] = `Bearer ${token.value}`;
+      }
+      return h;
+    };
+
+    const fetchRuns = async () => {
+      try {
+        runsLoading.value = true;
+        const res = await fetch(`https://api.github.com/repos/${repo}/actions/runs?per_page=5`, {
+          headers: getHeaders()
+        });
+        if (res.ok) {
+          const data = await res.json();
+          recentRuns.value = data.workflow_runs || [];
+        }
+      } catch (err) {
+        console.error('Failed to fetch runs', err);
+      } finally {
+        runsLoading.value = false;
+      }
+    };
+
+    const fetchReleases = async () => {
+      try {
+        releasesLoading.value = true;
+        const res = await fetch(`https://api.github.com/repos/${repo}/releases?per_page=10`, {
+          headers: getHeaders()
+        });
+        if (res.ok) {
+          const data = await res.json();
+          releases.value = data || [];
+        }
+      } catch (err) {
+        console.error('Failed to fetch releases', err);
+      } finally {
+        releasesLoading.value = false;
+      }
+    };
+
+    const dispatchRender = async () => {
+      if (!token.value) {
+        showTokenModal.value = true;
+        alert('请先配置 GitHub Token 以便调用云端工作流！');
+        return;
+      }
+
+      try {
+        isSubmitting.value = true;
+        const url = `https://api.github.com/repos/${repo}/actions/workflows/render.yml/dispatches`;
+        const payload = {
+          ref: 'main',
+          inputs: {
+            title: form.value.title,
+            subtitle: form.value.subtitle,
+            text: form.value.text,
+            voice: form.value.voice
+          }
+        };
+
+        const headers = getHeaders();
+        headers['Content-Type'] = 'application/json';
+
+        const res = await fetch(url, {
+          method: 'POST',
+          headers,
+          body: JSON.stringify(payload)
+        });
+
+        if (res.ok || res.status === 204) {
+          alert('🎉 成功唤醒云端虚拟机！任务已进入 GitHub Actions 渲染队列，右侧可查看进度！');
+          setTimeout(fetchRuns, 2000);
+        } else {
+          const errData = await res.json().catch(() => ({}));
+          alert('触发失败: ' + (errData.message || res.statusText));
+        }
+      } catch (err) {
+        alert('网络请求出错: ' + err.message);
+      } finally {
+        isSubmitting.value = false;
+      }
+    };
+
+    const getVideoDownloadUrl = (release) => {
+      if (release.assets && release.assets.length > 0) {
+        const mp4 = release.assets.find(a => a.name.endsWith('.mp4'));
+        if (mp4) return mp4.browser_download_url;
+      }
+      return `https://github.com/${repo}/releases/download/${release.tag_name}/video.mp4`;
+    };
+
+    const playVoicePreview = () => {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance('你好，这是语音音色示例，云端将使用微软神经网络进行高保真合成！');
+        utterance.lang = 'zh-CN';
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert('当前浏览器暂不支持试听合成，云端将使用标准的微软 Neural 高保真音频。');
+      }
+    };
+
+    const formatTime = (isoString) => {
+      if (!isoString) return '';
+      const d = new Date(isoString);
+      return d.toLocaleString('zh-CN', { hour12: false });
+    };
+
+    onMounted(() => {
+      fetchRuns();
+      fetchReleases();
+      // Auto-poll every 12 seconds
+      setInterval(() => {
+        fetchRuns();
+        fetchReleases();
+      }, 12000);
+    });
+
+    return {
+      repo,
+      token,
+      showTokenModal,
+      tokenInput,
+      saveToken,
+      form,
+      voices,
+      isSubmitting,
+      runsLoading,
+      releasesLoading,
+      recentRuns,
+      releases,
+      dispatchRender,
+      fetchRuns,
+      getVideoDownloadUrl,
+      playVoicePreview,
+      formatTime
+    };
+  }
+}).mount('#app');
+</script>
+</body>
+</html>
