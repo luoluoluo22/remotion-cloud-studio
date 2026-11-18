@@ -1,0 +1,2483 @@
+{
+  "text": "小象最羡慕猴子。猴子能爬上最高的树，轻轻松松越过山坡。每次森林运动会，小象都落在最后。听到旁边的动物说：“你怎么连猴子都比不过？”它开始怀疑自己。直到一场暴雨后，小溪涨水，一只小鹿被困在对岸。猴子爬得再高，也搬不动横在溪边的粗木。小象用长鼻卷起木头，稳稳搭出一座小桥，把小鹿接了回来。爸爸没有说“你比猴子强”，而是告诉它：你不必成为别人，你有自己的力量。书里提醒我们：“比较是万恶之源。永远不要拿自家孩子的短板和别人家孩子的强项比。”真正重要的，是帮助孩子找到优势，建立自信。",
+  "duration": 51.92,
+  "goldenQuote": "永远不要拿自家孩子的短板和别人家孩子的强项比。",
+  "characterTimings": [
+    {
+      "character": "小",
+      "start": 0,
+      "end": 0.2
+    },
+    {
+      "character": "象",
+      "start": 0.2,
+      "end": 0.4
+    },
+    {
+      "character": "最",
+      "start": 0.4,
+      "end": 0.72
+    },
+    {
+      "character": "羡",
+      "start": 0.72,
+      "end": 0.96
+    },
+    {
+      "character": "慕",
+      "start": 0.96,
+      "end": 1.44
+    },
+    {
+      "character": "猴",
+      "start": 1.44,
+      "end": 1.64
+    },
+    {
+      "character": "子",
+      "start": 1.64,
+      "end": 1.84
+    },
+    {
+      "character": "。",
+      "start": 1.84,
+      "end": 2.4
+    },
+    {
+      "character": "猴",
+      "start": 2.4,
+      "end": 2.56
+    },
+    {
+      "character": "子",
+      "start": 2.56,
+      "end": 2.72
+    },
+    {
+      "character": "能",
+      "start": 2.72,
+      "end": 2.88
+    },
+    {
+      "character": "爬",
+      "start": 2.88,
+      "end": 3.12
+    },
+    {
+      "character": "上",
+      "start": 3.12,
+      "end": 3.36
+    },
+    {
+      "character": "最",
+      "start": 3.36,
+      "end": 3.573
+    },
+    {
+      "character": "高",
+      "start": 3.573,
+      "end": 3.787
+    },
+    {
+      "character": "的",
+      "start": 3.787,
+      "end": 4
+    },
+    {
+      "character": "树",
+      "start": 4,
+      "end": 4.4
+    },
+    {
+      "character": "，",
+      "start": 4.4,
+      "end": 4.6
+    },
+    {
+      "character": "轻",
+      "start": 4.6,
+      "end": 4.7
+    },
+    {
+      "character": "轻",
+      "start": 4.7,
+      "end": 4.8
+    },
+    {
+      "character": "松",
+      "start": 4.8,
+      "end": 5.12
+    },
+    {
+      "character": "松",
+      "start": 5.12,
+      "end": 5.28
+    },
+    {
+      "character": "越",
+      "start": 5.28,
+      "end": 5.52
+    },
+    {
+      "character": "过",
+      "start": 5.52,
+      "end": 5.76
+    },
+    {
+      "character": "山",
+      "start": 5.76,
+      "end": 5.96
+    },
+    {
+      "character": "坡",
+      "start": 5.96,
+      "end": 6.16
+    },
+    {
+      "character": "。",
+      "start": 6.16,
+      "end": 6.8
+    },
+    {
+      "character": "每",
+      "start": 6.8,
+      "end": 7
+    },
+    {
+      "character": "次",
+      "start": 7,
+      "end": 7.2
+    },
+    {
+      "character": "森",
+      "start": 7.2,
+      "end": 7.36
+    },
+    {
+      "character": "林",
+      "start": 7.36,
+      "end": 7.52
+    },
+    {
+      "character": "运",
+      "start": 7.52,
+      "end": 7.76
+    },
+    {
+      "character": "动",
+      "start": 7.76,
+      "end": 8
+    },
+    {
+      "character": "会",
+      "start": 8,
+      "end": 8.24
+    },
+    {
+      "character": "，",
+      "start": 8.24,
+      "end": 8.32
+    },
+    {
+      "character": "小",
+      "start": 8.32,
+      "end": 8.56
+    },
+    {
+      "character": "象",
+      "start": 8.56,
+      "end": 8.72
+    },
+    {
+      "character": "都",
+      "start": 8.72,
+      "end": 8.88
+    },
+    {
+      "character": "落",
+      "start": 8.88,
+      "end": 9.08
+    },
+    {
+      "character": "在",
+      "start": 9.08,
+      "end": 9.28
+    },
+    {
+      "character": "最",
+      "start": 9.28,
+      "end": 9.52
+    },
+    {
+      "character": "后",
+      "start": 9.52,
+      "end": 9.76
+    },
+    {
+      "character": "。",
+      "start": 9.76,
+      "end": 10.32
+    },
+    {
+      "character": "听",
+      "start": 10.32,
+      "end": 10.48
+    },
+    {
+      "character": "到",
+      "start": 10.48,
+      "end": 10.64
+    },
+    {
+      "character": "旁",
+      "start": 10.64,
+      "end": 10.8
+    },
+    {
+      "character": "边",
+      "start": 10.8,
+      "end": 10.96
+    },
+    {
+      "character": "的",
+      "start": 10.96,
+      "end": 11.12
+    },
+    {
+      "character": "动",
+      "start": 11.12,
+      "end": 11.28
+    },
+    {
+      "character": "物",
+      "start": 11.28,
+      "end": 11.44
+    },
+    {
+      "character": "说",
+      "start": 11.44,
+      "end": 11.68
+    },
+    {
+      "character": "：",
+      "start": 11.68,
+      "end": 11.96
+    },
+    {
+      "character": "“",
+      "start": 11.96,
+      "end": 12.24
+    },
+    {
+      "character": "你",
+      "start": 12.24,
+      "end": 12.373
+    },
+    {
+      "character": "怎",
+      "start": 12.373,
+      "end": 12.507
+    },
+    {
+      "character": "么",
+      "start": 12.507,
+      "end": 12.64
+    },
+    {
+      "character": "连",
+      "start": 12.64,
+      "end": 12.88
+    },
+    {
+      "character": "猴",
+      "start": 12.88,
+      "end": 13.08
+    },
+    {
+      "character": "子",
+      "start": 13.08,
+      "end": 13.28
+    },
+    {
+      "character": "都",
+      "start": 13.28,
+      "end": 13.44
+    },
+    {
+      "character": "比",
+      "start": 13.44,
+      "end": 13.52
+    },
+    {
+      "character": "不",
+      "start": 13.52,
+      "end": 13.72
+    },
+    {
+      "character": "过",
+      "start": 13.72,
+      "end": 13.92
+    },
+    {
+      "character": "？",
+      "start": 13.92,
+      "end": 14.16
+    },
+    {
+      "character": "”",
+      "start": 14.16,
+      "end": 14.4
+    },
+    {
+      "character": "它",
+      "start": 14.4,
+      "end": 14.56
+    },
+    {
+      "character": "开",
+      "start": 14.56,
+      "end": 14.76
+    },
+    {
+      "character": "始",
+      "start": 14.76,
+      "end": 14.96
+    },
+    {
+      "character": "怀",
+      "start": 14.96,
+      "end": 15.16
+    },
+    {
+      "character": "疑",
+      "start": 15.16,
+      "end": 15.36
+    },
+    {
+      "character": "自",
+      "start": 15.36,
+      "end": 15.56
+    },
+    {
+      "character": "己",
+      "start": 15.56,
+      "end": 15.76
+    },
+    {
+      "character": "。",
+      "start": 15.76,
+      "end": 16.4
+    },
+    {
+      "character": "直",
+      "start": 16.4,
+      "end": 16.52
+    },
+    {
+      "character": "到",
+      "start": 16.52,
+      "end": 16.64
+    },
+    {
+      "character": "一",
+      "start": 16.64,
+      "end": 16.84
+    },
+    {
+      "character": "场",
+      "start": 16.84,
+      "end": 17.04
+    },
+    {
+      "character": "暴",
+      "start": 17.04,
+      "end": 17.24
+    },
+    {
+      "character": "雨",
+      "start": 17.24,
+      "end": 17.44
+    },
+    {
+      "character": "后",
+      "start": 17.44,
+      "end": 17.84
+    },
+    {
+      "character": "，",
+      "start": 17.84,
+      "end": 18.08
+    },
+    {
+      "character": "小",
+      "start": 18.08,
+      "end": 18.2
+    },
+    {
+      "character": "溪",
+      "start": 18.2,
+      "end": 18.32
+    },
+    {
+      "character": "涨",
+      "start": 18.32,
+      "end": 18.56
+    },
+    {
+      "character": "水",
+      "start": 18.56,
+      "end": 18.8
+    },
+    {
+      "character": "，",
+      "start": 18.8,
+      "end": 19.2
+    },
+    {
+      "character": "一",
+      "start": 19.2,
+      "end": 19.36
+    },
+    {
+      "character": "只",
+      "start": 19.36,
+      "end": 19.52
+    },
+    {
+      "character": "小",
+      "start": 19.52,
+      "end": 19.76
+    },
+    {
+      "character": "鹿",
+      "start": 19.76,
+      "end": 20
+    },
+    {
+      "character": "被",
+      "start": 20,
+      "end": 20.2
+    },
+    {
+      "character": "困",
+      "start": 20.2,
+      "end": 20.4
+    },
+    {
+      "character": "在",
+      "start": 20.4,
+      "end": 20.48
+    },
+    {
+      "character": "对",
+      "start": 20.48,
+      "end": 20.72
+    },
+    {
+      "character": "岸",
+      "start": 20.72,
+      "end": 20.96
+    },
+    {
+      "character": "。",
+      "start": 20.96,
+      "end": 21.44
+    },
+    {
+      "character": "猴",
+      "start": 21.44,
+      "end": 21.64
+    },
+    {
+      "character": "子",
+      "start": 21.64,
+      "end": 21.84
+    },
+    {
+      "character": "爬",
+      "start": 21.84,
+      "end": 22
+    },
+    {
+      "character": "得",
+      "start": 22,
+      "end": 22.16
+    },
+    {
+      "character": "再",
+      "start": 22.16,
+      "end": 22.48
+    },
+    {
+      "character": "高",
+      "start": 22.48,
+      "end": 22.88
+    },
+    {
+      "character": "，",
+      "start": 22.88,
+      "end": 22.96
+    },
+    {
+      "character": "也",
+      "start": 22.96,
+      "end": 23.12
+    },
+    {
+      "character": "搬",
+      "start": 23.12,
+      "end": 23.28
+    },
+    {
+      "character": "不",
+      "start": 23.28,
+      "end": 23.48
+    },
+    {
+      "character": "动",
+      "start": 23.48,
+      "end": 23.68
+    },
+    {
+      "character": "横",
+      "start": 23.68,
+      "end": 23.92
+    },
+    {
+      "character": "在",
+      "start": 23.92,
+      "end": 24.08
+    },
+    {
+      "character": "溪",
+      "start": 24.08,
+      "end": 24.24
+    },
+    {
+      "character": "边",
+      "start": 24.24,
+      "end": 24.56
+    },
+    {
+      "character": "的",
+      "start": 24.56,
+      "end": 24.64
+    },
+    {
+      "character": "粗",
+      "start": 24.64,
+      "end": 24.8
+    },
+    {
+      "character": "木",
+      "start": 24.8,
+      "end": 25.04
+    },
+    {
+      "character": "。",
+      "start": 25.04,
+      "end": 25.68
+    },
+    {
+      "character": "小",
+      "start": 25.68,
+      "end": 25.92
+    },
+    {
+      "character": "象",
+      "start": 25.92,
+      "end": 26.16
+    },
+    {
+      "character": "用",
+      "start": 26.16,
+      "end": 26.4
+    },
+    {
+      "character": "长",
+      "start": 26.4,
+      "end": 26.64
+    },
+    {
+      "character": "鼻",
+      "start": 26.64,
+      "end": 26.96
+    },
+    {
+      "character": "卷",
+      "start": 26.96,
+      "end": 27.2
+    },
+    {
+      "character": "起",
+      "start": 27.2,
+      "end": 27.36
+    },
+    {
+      "character": "木",
+      "start": 27.36,
+      "end": 27.6
+    },
+    {
+      "character": "头",
+      "start": 27.6,
+      "end": 28
+    },
+    {
+      "character": "，",
+      "start": 28,
+      "end": 28.2
+    },
+    {
+      "character": "稳",
+      "start": 28.2,
+      "end": 28.4
+    },
+    {
+      "character": "稳",
+      "start": 28.4,
+      "end": 28.56
+    },
+    {
+      "character": "搭",
+      "start": 28.56,
+      "end": 28.72
+    },
+    {
+      "character": "出",
+      "start": 28.72,
+      "end": 28.88
+    },
+    {
+      "character": "一",
+      "start": 28.88,
+      "end": 29.04
+    },
+    {
+      "character": "座",
+      "start": 29.04,
+      "end": 29.2
+    },
+    {
+      "character": "小",
+      "start": 29.2,
+      "end": 29.36
+    },
+    {
+      "character": "桥",
+      "start": 29.36,
+      "end": 29.68
+    },
+    {
+      "character": "，",
+      "start": 29.68,
+      "end": 30
+    },
+    {
+      "character": "把",
+      "start": 30,
+      "end": 30.16
+    },
+    {
+      "character": "小",
+      "start": 30.16,
+      "end": 30.32
+    },
+    {
+      "character": "鹿",
+      "start": 30.32,
+      "end": 30.56
+    },
+    {
+      "character": "接",
+      "start": 30.56,
+      "end": 30.72
+    },
+    {
+      "character": "了",
+      "start": 30.72,
+      "end": 30.88
+    },
+    {
+      "character": "回",
+      "start": 30.88,
+      "end": 31.08
+    },
+    {
+      "character": "来",
+      "start": 31.08,
+      "end": 31.28
+    },
+    {
+      "character": "。",
+      "start": 31.28,
+      "end": 31.84
+    },
+    {
+      "character": "爸",
+      "start": 31.84,
+      "end": 32
+    },
+    {
+      "character": "爸",
+      "start": 32,
+      "end": 32.16
+    },
+    {
+      "character": "没",
+      "start": 32.16,
+      "end": 32.36
+    },
+    {
+      "character": "有",
+      "start": 32.36,
+      "end": 32.56
+    },
+    {
+      "character": "说",
+      "start": 32.56,
+      "end": 32.88
+    },
+    {
+      "character": "“",
+      "start": 32.88,
+      "end": 32.96
+    },
+    {
+      "character": "你",
+      "start": 32.96,
+      "end": 33.2
+    },
+    {
+      "character": "比",
+      "start": 33.2,
+      "end": 33.28
+    },
+    {
+      "character": "猴",
+      "start": 33.28,
+      "end": 33.48
+    },
+    {
+      "character": "子",
+      "start": 33.48,
+      "end": 33.68
+    },
+    {
+      "character": "强",
+      "start": 33.68,
+      "end": 33.92
+    },
+    {
+      "character": "”",
+      "start": 33.92,
+      "end": 34.08
+    },
+    {
+      "character": "，",
+      "start": 34.08,
+      "end": 34.24
+    },
+    {
+      "character": "而",
+      "start": 34.24,
+      "end": 34.36
+    },
+    {
+      "character": "是",
+      "start": 34.36,
+      "end": 34.48
+    },
+    {
+      "character": "告",
+      "start": 34.48,
+      "end": 34.68
+    },
+    {
+      "character": "诉",
+      "start": 34.68,
+      "end": 34.88
+    },
+    {
+      "character": "它",
+      "start": 34.88,
+      "end": 35.04
+    },
+    {
+      "character": "：",
+      "start": 35.04,
+      "end": 35.52
+    },
+    {
+      "character": "你",
+      "start": 35.52,
+      "end": 35.76
+    },
+    {
+      "character": "不",
+      "start": 35.76,
+      "end": 35.96
+    },
+    {
+      "character": "必",
+      "start": 35.96,
+      "end": 36.16
+    },
+    {
+      "character": "成",
+      "start": 36.16,
+      "end": 36.32
+    },
+    {
+      "character": "为",
+      "start": 36.32,
+      "end": 36.48
+    },
+    {
+      "character": "别",
+      "start": 36.48,
+      "end": 36.8
+    },
+    {
+      "character": "人",
+      "start": 36.8,
+      "end": 37.12
+    },
+    {
+      "character": "，",
+      "start": 37.12,
+      "end": 37.2
+    },
+    {
+      "character": "你",
+      "start": 37.2,
+      "end": 37.36
+    },
+    {
+      "character": "有",
+      "start": 37.36,
+      "end": 37.54
+    },
+    {
+      "character": "自",
+      "start": 37.54,
+      "end": 37.72
+    },
+    {
+      "character": "己",
+      "start": 37.72,
+      "end": 37.9
+    },
+    {
+      "character": "的",
+      "start": 37.9,
+      "end": 38.08
+    },
+    {
+      "character": "力",
+      "start": 38.08,
+      "end": 38.28
+    },
+    {
+      "character": "量",
+      "start": 38.28,
+      "end": 38.48
+    },
+    {
+      "character": "。",
+      "start": 38.48,
+      "end": 39.2
+    },
+    {
+      "character": "书",
+      "start": 39.2,
+      "end": 39.36
+    },
+    {
+      "character": "里",
+      "start": 39.36,
+      "end": 39.52
+    },
+    {
+      "character": "提",
+      "start": 39.52,
+      "end": 39.72
+    },
+    {
+      "character": "醒",
+      "start": 39.72,
+      "end": 39.92
+    },
+    {
+      "character": "我",
+      "start": 39.92,
+      "end": 40.08
+    },
+    {
+      "character": "们",
+      "start": 40.08,
+      "end": 40.24
+    },
+    {
+      "character": "：",
+      "start": 40.24,
+      "end": 40.48
+    },
+    {
+      "character": "“",
+      "start": 40.48,
+      "end": 40.72
+    },
+    {
+      "character": "比",
+      "start": 40.72,
+      "end": 41
+    },
+    {
+      "character": "较",
+      "start": 41,
+      "end": 41.28
+    },
+    {
+      "character": "是",
+      "start": 41.28,
+      "end": 41.6
+    },
+    {
+      "character": "万",
+      "start": 41.6,
+      "end": 41.84
+    },
+    {
+      "character": "恶",
+      "start": 41.84,
+      "end": 42
+    },
+    {
+      "character": "之",
+      "start": 42,
+      "end": 42.24
+    },
+    {
+      "character": "源",
+      "start": 42.24,
+      "end": 42.48
+    },
+    {
+      "character": "。",
+      "start": 42.48,
+      "end": 42.96
+    },
+    {
+      "character": "永",
+      "start": 42.96,
+      "end": 43.16
+    },
+    {
+      "character": "远",
+      "start": 43.16,
+      "end": 43.36
+    },
+    {
+      "character": "不",
+      "start": 43.36,
+      "end": 43.48
+    },
+    {
+      "character": "要",
+      "start": 43.48,
+      "end": 43.6
+    },
+    {
+      "character": "拿",
+      "start": 43.6,
+      "end": 43.84
+    },
+    {
+      "character": "自",
+      "start": 43.84,
+      "end": 44.04
+    },
+    {
+      "character": "家",
+      "start": 44.04,
+      "end": 44.24
+    },
+    {
+      "character": "孩",
+      "start": 44.24,
+      "end": 44.373
+    },
+    {
+      "character": "子",
+      "start": 44.373,
+      "end": 44.507
+    },
+    {
+      "character": "的",
+      "start": 44.507,
+      "end": 44.64
+    },
+    {
+      "character": "短",
+      "start": 44.64,
+      "end": 44.92
+    },
+    {
+      "character": "板",
+      "start": 44.92,
+      "end": 45.2
+    },
+    {
+      "character": "和",
+      "start": 45.2,
+      "end": 45.44
+    },
+    {
+      "character": "别",
+      "start": 45.44,
+      "end": 45.6
+    },
+    {
+      "character": "人",
+      "start": 45.6,
+      "end": 45.76
+    },
+    {
+      "character": "家",
+      "start": 45.76,
+      "end": 46
+    },
+    {
+      "character": "孩",
+      "start": 46,
+      "end": 46.16
+    },
+    {
+      "character": "子",
+      "start": 46.16,
+      "end": 46.32
+    },
+    {
+      "character": "的",
+      "start": 46.32,
+      "end": 46.48
+    },
+    {
+      "character": "强",
+      "start": 46.48,
+      "end": 46.72
+    },
+    {
+      "character": "项",
+      "start": 46.72,
+      "end": 46.96
+    },
+    {
+      "character": "比",
+      "start": 46.96,
+      "end": 47.12
+    },
+    {
+      "character": "。",
+      "start": 47.12,
+      "end": 47.44
+    },
+    {
+      "character": "”",
+      "start": 47.44,
+      "end": 47.76
+    },
+    {
+      "character": "真",
+      "start": 47.76,
+      "end": 47.96
+    },
+    {
+      "character": "正",
+      "start": 47.96,
+      "end": 48.16
+    },
+    {
+      "character": "重",
+      "start": 48.16,
+      "end": 48.373
+    },
+    {
+      "character": "要",
+      "start": 48.373,
+      "end": 48.587
+    },
+    {
+      "character": "的",
+      "start": 48.587,
+      "end": 48.8
+    },
+    {
+      "character": "，",
+      "start": 48.8,
+      "end": 48.88
+    },
+    {
+      "character": "是",
+      "start": 48.88,
+      "end": 49.04
+    },
+    {
+      "character": "帮",
+      "start": 49.04,
+      "end": 49.2
+    },
+    {
+      "character": "助",
+      "start": 49.2,
+      "end": 49.36
+    },
+    {
+      "character": "孩",
+      "start": 49.36,
+      "end": 49.56
+    },
+    {
+      "character": "子",
+      "start": 49.56,
+      "end": 49.76
+    },
+    {
+      "character": "找",
+      "start": 49.76,
+      "end": 49.96
+    },
+    {
+      "character": "到",
+      "start": 49.96,
+      "end": 50.16
+    },
+    {
+      "character": "优",
+      "start": 50.16,
+      "end": 50.48
+    },
+    {
+      "character": "势",
+      "start": 50.48,
+      "end": 50.8
+    },
+    {
+      "character": "，",
+      "start": 50.8,
+      "end": 50.88
+    },
+    {
+      "character": "建",
+      "start": 50.88,
+      "end": 51.08
+    },
+    {
+      "character": "立",
+      "start": 51.08,
+      "end": 51.28
+    },
+    {
+      "character": "自",
+      "start": 51.28,
+      "end": 51.48
+    },
+    {
+      "character": "信",
+      "start": 51.48,
+      "end": 51.68
+    },
+    {
+      "character": "。",
+      "start": 51.68,
+      "end": 51.92
+    }
+  ],
+  "sentences": [
+    {
+      "text": "小象最羡慕猴子",
+      "start": 0,
+      "end": 2.4,
+      "characters": [
+        {
+          "character": "小",
+          "start": 0,
+          "end": 0.2
+        },
+        {
+          "character": "象",
+          "start": 0.2,
+          "end": 0.4
+        },
+        {
+          "character": "最",
+          "start": 0.4,
+          "end": 0.72
+        },
+        {
+          "character": "羡",
+          "start": 0.72,
+          "end": 0.96
+        },
+        {
+          "character": "慕",
+          "start": 0.96,
+          "end": 1.44
+        },
+        {
+          "character": "猴",
+          "start": 1.44,
+          "end": 1.64
+        },
+        {
+          "character": "子",
+          "start": 1.64,
+          "end": 1.84
+        }
+      ]
+    },
+    {
+      "text": "猴子能爬上最高的树",
+      "start": 2.4,
+      "end": 4.6,
+      "characters": [
+        {
+          "character": "猴",
+          "start": 2.4,
+          "end": 2.56
+        },
+        {
+          "character": "子",
+          "start": 2.56,
+          "end": 2.72
+        },
+        {
+          "character": "能",
+          "start": 2.72,
+          "end": 2.88
+        },
+        {
+          "character": "爬",
+          "start": 2.88,
+          "end": 3.12
+        },
+        {
+          "character": "上",
+          "start": 3.12,
+          "end": 3.36
+        },
+        {
+          "character": "最",
+          "start": 3.36,
+          "end": 3.573
+        },
+        {
+          "character": "高",
+          "start": 3.573,
+          "end": 3.787
+        },
+        {
+          "character": "的",
+          "start": 3.787,
+          "end": 4
+        },
+        {
+          "character": "树",
+          "start": 4,
+          "end": 4.4
+        }
+      ]
+    },
+    {
+      "text": "轻轻松松越过山坡",
+      "start": 4.6,
+      "end": 6.8,
+      "characters": [
+        {
+          "character": "轻",
+          "start": 4.6,
+          "end": 4.7
+        },
+        {
+          "character": "轻",
+          "start": 4.7,
+          "end": 4.8
+        },
+        {
+          "character": "松",
+          "start": 4.8,
+          "end": 5.12
+        },
+        {
+          "character": "松",
+          "start": 5.12,
+          "end": 5.28
+        },
+        {
+          "character": "越",
+          "start": 5.28,
+          "end": 5.52
+        },
+        {
+          "character": "过",
+          "start": 5.52,
+          "end": 5.76
+        },
+        {
+          "character": "山",
+          "start": 5.76,
+          "end": 5.96
+        },
+        {
+          "character": "坡",
+          "start": 5.96,
+          "end": 6.16
+        }
+      ]
+    },
+    {
+      "text": "每次森林运动会",
+      "start": 6.8,
+      "end": 8.32,
+      "characters": [
+        {
+          "character": "每",
+          "start": 6.8,
+          "end": 7
+        },
+        {
+          "character": "次",
+          "start": 7,
+          "end": 7.2
+        },
+        {
+          "character": "森",
+          "start": 7.2,
+          "end": 7.36
+        },
+        {
+          "character": "林",
+          "start": 7.36,
+          "end": 7.52
+        },
+        {
+          "character": "运",
+          "start": 7.52,
+          "end": 7.76
+        },
+        {
+          "character": "动",
+          "start": 7.76,
+          "end": 8
+        },
+        {
+          "character": "会",
+          "start": 8,
+          "end": 8.24
+        }
+      ]
+    },
+    {
+      "text": "小象都落在最后",
+      "start": 8.32,
+      "end": 10.32,
+      "characters": [
+        {
+          "character": "小",
+          "start": 8.32,
+          "end": 8.56
+        },
+        {
+          "character": "象",
+          "start": 8.56,
+          "end": 8.72
+        },
+        {
+          "character": "都",
+          "start": 8.72,
+          "end": 8.88
+        },
+        {
+          "character": "落",
+          "start": 8.88,
+          "end": 9.08
+        },
+        {
+          "character": "在",
+          "start": 9.08,
+          "end": 9.28
+        },
+        {
+          "character": "最",
+          "start": 9.28,
+          "end": 9.52
+        },
+        {
+          "character": "后",
+          "start": 9.52,
+          "end": 9.76
+        }
+      ]
+    },
+    {
+      "text": "听到旁边的动物说",
+      "start": 10.32,
+      "end": 11.96,
+      "characters": [
+        {
+          "character": "听",
+          "start": 10.32,
+          "end": 10.48
+        },
+        {
+          "character": "到",
+          "start": 10.48,
+          "end": 10.64
+        },
+        {
+          "character": "旁",
+          "start": 10.64,
+          "end": 10.8
+        },
+        {
+          "character": "边",
+          "start": 10.8,
+          "end": 10.96
+        },
+        {
+          "character": "的",
+          "start": 10.96,
+          "end": 11.12
+        },
+        {
+          "character": "动",
+          "start": 11.12,
+          "end": 11.28
+        },
+        {
+          "character": "物",
+          "start": 11.28,
+          "end": 11.44
+        },
+        {
+          "character": "说",
+          "start": 11.44,
+          "end": 11.68
+        }
+      ]
+    },
+    {
+      "text": "“你怎么连猴子都比不过",
+      "start": 11.96,
+      "end": 14.16,
+      "characters": [
+        {
+          "character": "“",
+          "start": 11.96,
+          "end": 12.24
+        },
+        {
+          "character": "你",
+          "start": 12.24,
+          "end": 12.373
+        },
+        {
+          "character": "怎",
+          "start": 12.373,
+          "end": 12.507
+        },
+        {
+          "character": "么",
+          "start": 12.507,
+          "end": 12.64
+        },
+        {
+          "character": "连",
+          "start": 12.64,
+          "end": 12.88
+        },
+        {
+          "character": "猴",
+          "start": 12.88,
+          "end": 13.08
+        },
+        {
+          "character": "子",
+          "start": 13.08,
+          "end": 13.28
+        },
+        {
+          "character": "都",
+          "start": 13.28,
+          "end": 13.44
+        },
+        {
+          "character": "比",
+          "start": 13.44,
+          "end": 13.52
+        },
+        {
+          "character": "不",
+          "start": 13.52,
+          "end": 13.72
+        },
+        {
+          "character": "过",
+          "start": 13.72,
+          "end": 13.92
+        }
+      ]
+    },
+    {
+      "text": "”它开始怀疑自己",
+      "start": 14.16,
+      "end": 16.4,
+      "characters": [
+        {
+          "character": "”",
+          "start": 14.16,
+          "end": 14.4
+        },
+        {
+          "character": "它",
+          "start": 14.4,
+          "end": 14.56
+        },
+        {
+          "character": "开",
+          "start": 14.56,
+          "end": 14.76
+        },
+        {
+          "character": "始",
+          "start": 14.76,
+          "end": 14.96
+        },
+        {
+          "character": "怀",
+          "start": 14.96,
+          "end": 15.16
+        },
+        {
+          "character": "疑",
+          "start": 15.16,
+          "end": 15.36
+        },
+        {
+          "character": "自",
+          "start": 15.36,
+          "end": 15.56
+        },
+        {
+          "character": "己",
+          "start": 15.56,
+          "end": 15.76
+        }
+      ]
+    },
+    {
+      "text": "直到一场暴雨后",
+      "start": 16.4,
+      "end": 18.08,
+      "characters": [
+        {
+          "character": "直",
+          "start": 16.4,
+          "end": 16.52
+        },
+        {
+          "character": "到",
+          "start": 16.52,
+          "end": 16.64
+        },
+        {
+          "character": "一",
+          "start": 16.64,
+          "end": 16.84
+        },
+        {
+          "character": "场",
+          "start": 16.84,
+          "end": 17.04
+        },
+        {
+          "character": "暴",
+          "start": 17.04,
+          "end": 17.24
+        },
+        {
+          "character": "雨",
+          "start": 17.24,
+          "end": 17.44
+        },
+        {
+          "character": "后",
+          "start": 17.44,
+          "end": 17.84
+        }
+      ]
+    },
+    {
+      "text": "小溪涨水",
+      "start": 18.08,
+      "end": 19.2,
+      "characters": [
+        {
+          "character": "小",
+          "start": 18.08,
+          "end": 18.2
+        },
+        {
+          "character": "溪",
+          "start": 18.2,
+          "end": 18.32
+        },
+        {
+          "character": "涨",
+          "start": 18.32,
+          "end": 18.56
+        },
+        {
+          "character": "水",
+          "start": 18.56,
+          "end": 18.8
+        }
+      ]
+    },
+    {
+      "text": "一只小鹿被困在对岸",
+      "start": 19.2,
+      "end": 21.44,
+      "characters": [
+        {
+          "character": "一",
+          "start": 19.2,
+          "end": 19.36
+        },
+        {
+          "character": "只",
+          "start": 19.36,
+          "end": 19.52
+        },
+        {
+          "character": "小",
+          "start": 19.52,
+          "end": 19.76
+        },
+        {
+          "character": "鹿",
+          "start": 19.76,
+          "end": 20
+        },
+        {
+          "character": "被",
+          "start": 20,
+          "end": 20.2
+        },
+        {
+          "character": "困",
+          "start": 20.2,
+          "end": 20.4
+        },
+        {
+          "character": "在",
+          "start": 20.4,
+          "end": 20.48
+        },
+        {
+          "character": "对",
+          "start": 20.48,
+          "end": 20.72
+        },
+        {
+          "character": "岸",
+          "start": 20.72,
+          "end": 20.96
+        }
+      ]
+    },
+    {
+      "text": "猴子爬得再高",
+      "start": 21.44,
+      "end": 22.96,
+      "characters": [
+        {
+          "character": "猴",
+          "start": 21.44,
+          "end": 21.64
+        },
+        {
+          "character": "子",
+          "start": 21.64,
+          "end": 21.84
+        },
+        {
+          "character": "爬",
+          "start": 21.84,
+          "end": 22
+        },
+        {
+          "character": "得",
+          "start": 22,
+          "end": 22.16
+        },
+        {
+          "character": "再",
+          "start": 22.16,
+          "end": 22.48
+        },
+        {
+          "character": "高",
+          "start": 22.48,
+          "end": 22.88
+        }
+      ]
+    },
+    {
+      "text": "也搬不动横在溪边的粗木",
+      "start": 22.96,
+      "end": 25.68,
+      "characters": [
+        {
+          "character": "也",
+          "start": 22.96,
+          "end": 23.12
+        },
+        {
+          "character": "搬",
+          "start": 23.12,
+          "end": 23.28
+        },
+        {
+          "character": "不",
+          "start": 23.28,
+          "end": 23.48
+        },
+        {
+          "character": "动",
+          "start": 23.48,
+          "end": 23.68
+        },
+        {
+          "character": "横",
+          "start": 23.68,
+          "end": 23.92
+        },
+        {
+          "character": "在",
+          "start": 23.92,
+          "end": 24.08
+        },
+        {
+          "character": "溪",
+          "start": 24.08,
+          "end": 24.24
+        },
+        {
+          "character": "边",
+          "start": 24.24,
+          "end": 24.56
+        },
+        {
+          "character": "的",
+          "start": 24.56,
+          "end": 24.64
+        },
+        {
+          "character": "粗",
+          "start": 24.64,
+          "end": 24.8
+        },
+        {
+          "character": "木",
+          "start": 24.8,
+          "end": 25.04
+        }
+      ]
+    },
+    {
+      "text": "小象用长鼻卷起木头",
+      "start": 25.68,
+      "end": 28.2,
+      "characters": [
+        {
+          "character": "小",
+          "start": 25.68,
+          "end": 25.92
+        },
+        {
+          "character": "象",
+          "start": 25.92,
+          "end": 26.16
+        },
+        {
+          "character": "用",
+          "start": 26.16,
+          "end": 26.4
+        },
+        {
+          "character": "长",
+          "start": 26.4,
+          "end": 26.64
+        },
+        {
+          "character": "鼻",
+          "start": 26.64,
+          "end": 26.96
+        },
+        {
+          "character": "卷",
+          "start": 26.96,
+          "end": 27.2
+        },
+        {
+          "character": "起",
+          "start": 27.2,
+          "end": 27.36
+        },
+        {
+          "character": "木",
+          "start": 27.36,
+          "end": 27.6
+        },
+        {
+          "character": "头",
+          "start": 27.6,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "text": "稳稳搭出一座小桥",
+      "start": 28.2,
+      "end": 30.0,
+      "characters": [
+        {
+          "character": "稳",
+          "start": 28.2,
+          "end": 28.4
+        },
+        {
+          "character": "稳",
+          "start": 28.4,
+          "end": 28.56
+        },
+        {
+          "character": "搭",
+          "start": 28.56,
+          "end": 28.72
+        },
+        {
+          "character": "出",
+          "start": 28.72,
+          "end": 28.88
+        },
+        {
+          "character": "一",
+          "start": 28.88,
+          "end": 29.04
+        },
+        {
+          "character": "座",
+          "start": 29.04,
+          "end": 29.2
+        },
+        {
+          "character": "小",
+          "start": 29.2,
+          "end": 29.36
+        },
+        {
+          "character": "桥",
+          "start": 29.36,
+          "end": 29.68
+        }
+      ]
+    },
+    {
+      "text": "把小鹿接了回来",
+      "start": 30,
+      "end": 31.84,
+      "characters": [
+        {
+          "character": "把",
+          "start": 30,
+          "end": 30.16
+        },
+        {
+          "character": "小",
+          "start": 30.16,
+          "end": 30.32
+        },
+        {
+          "character": "鹿",
+          "start": 30.32,
+          "end": 30.56
+        },
+        {
+          "character": "接",
+          "start": 30.56,
+          "end": 30.72
+        },
+        {
+          "character": "了",
+          "start": 30.72,
+          "end": 30.88
+        },
+        {
+          "character": "回",
+          "start": 30.88,
+          "end": 31.08
+        },
+        {
+          "character": "来",
+          "start": 31.08,
+          "end": 31.28
+        }
+      ]
+    },
+    {
+      "text": "爸爸没有说“你比猴子强”",
+      "start": 31.84,
+      "end": 34.24,
+      "characters": [
+        {
+          "character": "爸",
+          "start": 31.84,
+          "end": 32
+        },
+        {
+          "character": "爸",
+          "start": 32,
+          "end": 32.16
+        },
+        {
+          "character": "没",
+          "start": 32.16,
+          "end": 32.36
+        },
+        {
+          "character": "有",
+          "start": 32.36,
+          "end": 32.56
+        },
+        {
+          "character": "说",
+          "start": 32.56,
+          "end": 32.88
+        },
+        {
+          "character": "“",
+          "start": 32.88,
+          "end": 32.96
+        },
+        {
+          "character": "你",
+          "start": 32.96,
+          "end": 33.2
+        },
+        {
+          "character": "比",
+          "start": 33.2,
+          "end": 33.28
+        },
+        {
+          "character": "猴",
+          "start": 33.28,
+          "end": 33.48
+        },
+        {
+          "character": "子",
+          "start": 33.48,
+          "end": 33.68
+        },
+        {
+          "character": "强",
+          "start": 33.68,
+          "end": 33.92
+        },
+        {
+          "character": "”",
+          "start": 33.92,
+          "end": 34.08
+        }
+      ]
+    },
+    {
+      "text": "而是告诉它",
+      "start": 34.24,
+      "end": 35.52,
+      "characters": [
+        {
+          "character": "而",
+          "start": 34.24,
+          "end": 34.36
+        },
+        {
+          "character": "是",
+          "start": 34.36,
+          "end": 34.48
+        },
+        {
+          "character": "告",
+          "start": 34.48,
+          "end": 34.68
+        },
+        {
+          "character": "诉",
+          "start": 34.68,
+          "end": 34.88
+        },
+        {
+          "character": "它",
+          "start": 34.88,
+          "end": 35.04
+        }
+      ]
+    },
+    {
+      "text": "你不必成为别人",
+      "start": 35.52,
+      "end": 37.2,
+      "characters": [
+        {
+          "character": "你",
+          "start": 35.52,
+          "end": 35.76
+        },
+        {
+          "character": "不",
+          "start": 35.76,
+          "end": 35.96
+        },
+        {
+          "character": "必",
+          "start": 35.96,
+          "end": 36.16
+        },
+        {
+          "character": "成",
+          "start": 36.16,
+          "end": 36.32
+        },
+        {
+          "character": "为",
+          "start": 36.32,
+          "end": 36.48
+        },
+        {
+          "character": "别",
+          "start": 36.48,
+          "end": 36.8
+        },
+        {
+          "character": "人",
+          "start": 36.8,
+          "end": 37.12
+        }
+      ]
+    },
+    {
+      "text": "你有自己的力量",
+      "start": 37.2,
+      "end": 39.2,
+      "characters": [
+        {
+          "character": "你",
+          "start": 37.2,
+          "end": 37.36
+        },
+        {
+          "character": "有",
+          "start": 37.36,
+          "end": 37.54
+        },
+        {
+          "character": "自",
+          "start": 37.54,
+          "end": 37.72
+        },
+        {
+          "character": "己",
+          "start": 37.72,
+          "end": 37.9
+        },
+        {
+          "character": "的",
+          "start": 37.9,
+          "end": 38.08
+        },
+        {
+          "character": "力",
+          "start": 38.08,
+          "end": 38.28
+        },
+        {
+          "character": "量",
+          "start": 38.28,
+          "end": 38.48
+        }
+      ]
+    },
+    {
+      "text": "书里提醒我们",
+      "start": 39.2,
+      "end": 40.48,
+      "characters": [
+        {
+          "character": "书",
+          "start": 39.2,
+          "end": 39.36
+        },
+        {
+          "character": "里",
+          "start": 39.36,
+          "end": 39.52
+        },
+        {
+          "character": "提",
+          "start": 39.52,
+          "end": 39.72
+        },
+        {
+          "character": "醒",
+          "start": 39.72,
+          "end": 39.92
+        },
+        {
+          "character": "我",
+          "start": 39.92,
+          "end": 40.08
+        },
+        {
+          "character": "们",
+          "start": 40.08,
+          "end": 40.24
+        }
+      ]
+    },
+    {
+      "text": "“比较是万恶之源",
+      "start": 40.48,
+      "end": 42.96,
+      "characters": [
+        {
+          "character": "“",
+          "start": 40.48,
+          "end": 40.72
+        },
+        {
+          "character": "比",
+          "start": 40.72,
+          "end": 41
+        },
+        {
+          "character": "较",
+          "start": 41,
+          "end": 41.28
+        },
+        {
+          "character": "是",
+          "start": 41.28,
+          "end": 41.6
+        },
+        {
+          "character": "万",
+          "start": 41.6,
+          "end": 41.84
+        },
+        {
+          "character": "恶",
+          "start": 41.84,
+          "end": 42
+        },
+        {
+          "character": "之",
+          "start": 42,
+          "end": 42.24
+        },
+        {
+          "character": "源",
+          "start": 42.24,
+          "end": 42.48
+        }
+      ]
+    },
+    {
+      "text": "永远不要拿自家孩子的短板和别人家孩子的强项比",
+      "start": 42.96,
+      "end": 47.44,
+      "characters": [
+        {
+          "character": "永",
+          "start": 42.96,
+          "end": 43.16
+        },
+        {
+          "character": "远",
+          "start": 43.16,
+          "end": 43.36
+        },
+        {
+          "character": "不",
+          "start": 43.36,
+          "end": 43.48
+        },
+        {
+          "character": "要",
+          "start": 43.48,
+          "end": 43.6
+        },
+        {
+          "character": "拿",
+          "start": 43.6,
+          "end": 43.84
+        },
+        {
+          "character": "自",
+          "start": 43.84,
+          "end": 44.04
+        },
+        {
+          "character": "家",
+          "start": 44.04,
+          "end": 44.24
+        },
+        {
+          "character": "孩",
+          "start": 44.24,
+          "end": 44.373
+        },
+        {
+          "character": "子",
+          "start": 44.373,
+          "end": 44.507
+        },
+        {
+          "character": "的",
+          "start": 44.507,
+          "end": 44.64
+        },
+        {
+          "character": "短",
+          "start": 44.64,
+          "end": 44.92
+        },
+        {
+          "character": "板",
+          "start": 44.92,
+          "end": 45.2
+        },
+        {
+          "character": "和",
+          "start": 45.2,
+          "end": 45.44
+        },
+        {
+          "character": "别",
+          "start": 45.44,
+          "end": 45.6
+        },
+        {
+          "character": "人",
+          "start": 45.6,
+          "end": 45.76
+        },
+        {
+          "character": "家",
+          "start": 45.76,
+          "end": 46
+        },
+        {
+          "character": "孩",
+          "start": 46,
+          "end": 46.16
+        },
+        {
+          "character": "子",
+          "start": 46.16,
+          "end": 46.32
+        },
+        {
+          "character": "的",
+          "start": 46.32,
+          "end": 46.48
+        },
+        {
+          "character": "强",
+          "start": 46.48,
+          "end": 46.72
+        },
+        {
+          "character": "项",
+          "start": 46.72,
+          "end": 46.96
+        },
+        {
+          "character": "比",
+          "start": 46.96,
+          "end": 47.12
+        }
+      ]
+    },
+    {
+      "text": "”真正重要的",
+      "start": 47.44,
+      "end": 48.88,
+      "characters": [
+        {
+          "character": "”",
+          "start": 47.44,
+          "end": 47.76
+        },
+        {
+          "character": "真",
+          "start": 47.76,
+          "end": 47.96
+        },
+        {
+          "character": "正",
+          "start": 47.96,
+          "end": 48.16
+        },
+        {
+          "character": "重",
+          "start": 48.16,
+          "end": 48.373
+        },
+        {
+          "character": "要",
+          "start": 48.373,
+          "end": 48.587
+        },
+        {
+          "character": "的",
+          "start": 48.587,
+          "end": 48.8
+        }
+      ]
+    },
+    {
+      "text": "是帮助孩子找到优势",
+      "start": 48.88,
+      "end": 50.88,
+      "characters": [
+        {
+          "character": "是",
+          "start": 48.88,
+          "end": 49.04
+        },
+        {
+          "character": "帮",
+          "start": 49.04,
+          "end": 49.2
+        },
+        {
+          "character": "助",
+          "start": 49.2,
+          "end": 49.36
+        },
+        {
+          "character": "孩",
+          "start": 49.36,
+          "end": 49.56
+        },
+        {
+          "character": "子",
+          "start": 49.56,
+          "end": 49.76
+        },
+        {
+          "character": "找",
+          "start": 49.76,
+          "end": 49.96
+        },
+        {
+          "character": "到",
+          "start": 49.96,
+          "end": 50.16
+        },
+        {
+          "character": "优",
+          "start": 50.16,
+          "end": 50.48
+        },
+        {
+          "character": "势",
+          "start": 50.48,
+          "end": 50.8
+        }
+      ]
+    },
+    {
+      "text": "建立自信",
+      "start": 50.88,
+      "end": 51.92,
+      "characters": [
+        {
+          "character": "建",
+          "start": 50.88,
+          "end": 51.08
+        },
+        {
+          "character": "立",
+          "start": 51.08,
+          "end": 51.28
+        },
+        {
+          "character": "自",
+          "start": 51.28,
+          "end": 51.48
+        },
+        {
+          "character": "信",
+          "start": 51.48,
+          "end": 51.68
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01-monkey-comparison",
+      "label": "羡慕会爬树的猴子",
+      "start": 0,
+      "end": 9.76
+    },
+    {
+      "id": "scene-02-self-doubt",
+      "label": "小象开始怀疑自己",
+      "start": 10.32,
+      "end": 15.76
+    },
+    {
+      "id": "scene-03-flooded-creek",
+      "label": "暴雨后小鹿被困",
+      "start": 16.4,
+      "end": 20.96
+    },
+    {
+      "id": "scene-04-elephant-strength",
+      "label": "长鼻子成为独特本领",
+      "start": 21.44,
+      "end": 29.68
+    },
+    {
+      "id": "scene-05-helping-fawn",
+      "label": "小象用优势帮助别人",
+      "start": 30,
+      "end": 38.48
+    },
+    {
+      "id": "scene-06-find-strength",
+      "label": "不必成为别人",
+      "start": 39.2,
+      "end": 51.92
+    }
+  ],
+  "narrationText": "小象最羡慕猴子。猴子能爬上最高的树，轻轻松松越过山坡。每次森林运动会，小象都落在最后。听到旁边的动物说：“你怎么连猴子都比不过？”它开始怀疑自己。直到一场暴雨后，小溪涨水，一只小鹿被困在对岸。猴子爬得再高，也搬不动横在溪边的粗木。小象用长鼻卷起木头，稳稳搭出一座小桥，把小鹿接了回来。爸爸没有说“你比猴子强”，而是告诉它：你不必成为别人，你有自己的力量。书里提醒我们：“比较是万恶之源。永远不要拿自家孩子的短板和别人家孩子的强项比。”真正重要的，是帮助孩子找到优势，建立自信。",
+  "sourceScriptId": "book-vo-animal-elephant-v002",
+  "sourceScriptVersion": 1,
+  "voiceSha256": "c839b1218deee39340a85eb0845f86ce14f14fbcaf2cda5fe60af7c145b4b20e"
+}

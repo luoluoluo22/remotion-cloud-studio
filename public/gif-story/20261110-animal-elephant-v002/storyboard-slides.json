@@ -1,0 +1,88 @@
+{
+  "gapPolicy": "hold-previous",
+  "slides": [
+    {
+      "id": "slide-00",
+      "scene": "scene-01-monkey-comparison",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-01-monkey-comparison/frame-01.png",
+      "sourceFrame": "frame-01.png",
+      "start": 0.0,
+      "end": 5.02
+    },
+    {
+      "id": "slide-01",
+      "scene": "scene-01-monkey-comparison",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-01-monkey-comparison/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 5.02,
+      "end": 10.04
+    },
+    {
+      "id": "slide-02",
+      "scene": "scene-02-self-doubt",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-02-self-doubt/frame-03.png",
+      "sourceFrame": "frame-03.png",
+      "start": 10.04,
+      "end": 16.08
+    },
+    {
+      "id": "slide-03",
+      "scene": "scene-03-flooded-creek",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-03-flooded-creek/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 16.08,
+      "end": 21.2
+    },
+    {
+      "id": "slide-04",
+      "scene": "scene-04-elephant-strength",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-04-elephant-strength/frame-02.png",
+      "sourceFrame": "frame-02.png",
+      "start": 21.2,
+      "end": 25.52
+    },
+    {
+      "id": "slide-05",
+      "scene": "scene-04-elephant-strength",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-04-elephant-strength/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 25.52,
+      "end": 29.84
+    },
+    {
+      "id": "slide-06",
+      "scene": "scene-05-helping-fawn",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-05-helping-fawn/frame-02.png",
+      "sourceFrame": "frame-02.png",
+      "start": 29.84,
+      "end": 34.34
+    },
+    {
+      "id": "slide-07",
+      "scene": "scene-05-helping-fawn",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-05-helping-fawn/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 34.34,
+      "end": 38.84
+    },
+    {
+      "id": "slide-08",
+      "scene": "scene-06-find-strength",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-06-find-strength/frame-02.png",
+      "sourceFrame": "frame-02.png",
+      "start": 38.84,
+      "end": 45.38
+    },
+    {
+      "id": "slide-09",
+      "scene": "scene-06-find-strength",
+      "image": "gif-story/20261110-animal-elephant-v002/scenes/scene-06-find-strength/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 45.38,
+      "end": 51.92
+    }
+  ],
+  "durationSeconds": 51.92,
+  "transition": "paperSlide",
+  "switchIntervalSeconds": 5.192
+}

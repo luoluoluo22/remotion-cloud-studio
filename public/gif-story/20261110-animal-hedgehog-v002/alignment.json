@@ -1,0 +1,2313 @@
+{
+  "text": "春天，小刺猬在林子里种下了一颗花种。隔壁兔子的花先开了，它每天跑去看，越看越着急。它忍不住扒开泥土，想看看自己的花为什么还没长出来。妈妈轻轻拦住它：别急，花有自己的季节。今天浇一点水，明天晒一会儿太阳，别把种子拔出来催它。小刺猬终于不再盯着别人的花，而是每天认真照料自己的小土坡。后来，别人的花谢了，它的花却在更晚的季节悄悄绽放。书里说：“慢慢来，比较快！”教育不是催熟一朵花，而是守护它自己的花期。孩子也一样，别用别人的进度，定义他的成长。",
+  "duration": 49.68,
+  "goldenQuote": "慢慢来，比较快！",
+  "characterTimings": [
+    {
+      "character": "春",
+      "start": 0,
+      "end": 0.66
+    },
+    {
+      "character": "天",
+      "start": 0.66,
+      "end": 0.88
+    },
+    {
+      "character": "，",
+      "start": 0.88,
+      "end": 1.12
+    },
+    {
+      "character": "小",
+      "start": 1.12,
+      "end": 1.36
+    },
+    {
+      "character": "刺",
+      "start": 1.36,
+      "end": 1.44
+    },
+    {
+      "character": "猬",
+      "start": 1.44,
+      "end": 1.76
+    },
+    {
+      "character": "在",
+      "start": 1.76,
+      "end": 1.92
+    },
+    {
+      "character": "林",
+      "start": 1.92,
+      "end": 2.08
+    },
+    {
+      "character": "子",
+      "start": 2.08,
+      "end": 2.32
+    },
+    {
+      "character": "里",
+      "start": 2.32,
+      "end": 2.56
+    },
+    {
+      "character": "种",
+      "start": 2.56,
+      "end": 2.72
+    },
+    {
+      "character": "下",
+      "start": 2.72,
+      "end": 2.88
+    },
+    {
+      "character": "了",
+      "start": 2.88,
+      "end": 3.04
+    },
+    {
+      "character": "一",
+      "start": 3.04,
+      "end": 3.2
+    },
+    {
+      "character": "颗",
+      "start": 3.2,
+      "end": 3.44
+    },
+    {
+      "character": "花",
+      "start": 3.44,
+      "end": 3.68
+    },
+    {
+      "character": "种",
+      "start": 3.68,
+      "end": 3.76
+    },
+    {
+      "character": "。",
+      "start": 3.76,
+      "end": 4.4
+    },
+    {
+      "character": "隔",
+      "start": 4.4,
+      "end": 4.6
+    },
+    {
+      "character": "壁",
+      "start": 4.6,
+      "end": 4.8
+    },
+    {
+      "character": "兔",
+      "start": 4.8,
+      "end": 4.92
+    },
+    {
+      "character": "子",
+      "start": 4.92,
+      "end": 5.04
+    },
+    {
+      "character": "的",
+      "start": 5.04,
+      "end": 5.28
+    },
+    {
+      "character": "花",
+      "start": 5.28,
+      "end": 5.52
+    },
+    {
+      "character": "先",
+      "start": 5.52,
+      "end": 5.76
+    },
+    {
+      "character": "开",
+      "start": 5.76,
+      "end": 6.08
+    },
+    {
+      "character": "了",
+      "start": 6.08,
+      "end": 6.4
+    },
+    {
+      "character": "，",
+      "start": 6.4,
+      "end": 6.56
+    },
+    {
+      "character": "它",
+      "start": 6.56,
+      "end": 6.72
+    },
+    {
+      "character": "每",
+      "start": 6.72,
+      "end": 6.92
+    },
+    {
+      "character": "天",
+      "start": 6.92,
+      "end": 7.12
+    },
+    {
+      "character": "跑",
+      "start": 7.12,
+      "end": 7.36
+    },
+    {
+      "character": "去",
+      "start": 7.36,
+      "end": 7.64
+    },
+    {
+      "character": "看",
+      "start": 7.64,
+      "end": 7.92
+    },
+    {
+      "character": "，",
+      "start": 7.92,
+      "end": 8.16
+    },
+    {
+      "character": "越",
+      "start": 8.16,
+      "end": 8.4
+    },
+    {
+      "character": "看",
+      "start": 8.4,
+      "end": 8.56
+    },
+    {
+      "character": "越",
+      "start": 8.56,
+      "end": 8.8
+    },
+    {
+      "character": "着",
+      "start": 8.8,
+      "end": 8.96
+    },
+    {
+      "character": "急",
+      "start": 8.96,
+      "end": 9.12
+    },
+    {
+      "character": "。",
+      "start": 9.12,
+      "end": 9.76
+    },
+    {
+      "character": "它",
+      "start": 9.76,
+      "end": 9.92
+    },
+    {
+      "character": "忍",
+      "start": 9.92,
+      "end": 10.08
+    },
+    {
+      "character": "不",
+      "start": 10.08,
+      "end": 10.24
+    },
+    {
+      "character": "住",
+      "start": 10.24,
+      "end": 10.4
+    },
+    {
+      "character": "扒",
+      "start": 10.4,
+      "end": 10.56
+    },
+    {
+      "character": "开",
+      "start": 10.56,
+      "end": 10.72
+    },
+    {
+      "character": "泥",
+      "start": 10.72,
+      "end": 11
+    },
+    {
+      "character": "土",
+      "start": 11,
+      "end": 11.28
+    },
+    {
+      "character": "，",
+      "start": 11.28,
+      "end": 11.44
+    },
+    {
+      "character": "想",
+      "start": 11.44,
+      "end": 11.6
+    },
+    {
+      "character": "看",
+      "start": 11.6,
+      "end": 11.76
+    },
+    {
+      "character": "看",
+      "start": 11.76,
+      "end": 11.92
+    },
+    {
+      "character": "自",
+      "start": 11.92,
+      "end": 12.08
+    },
+    {
+      "character": "己",
+      "start": 12.08,
+      "end": 12.24
+    },
+    {
+      "character": "的",
+      "start": 12.24,
+      "end": 12.4
+    },
+    {
+      "character": "花",
+      "start": 12.4,
+      "end": 12.72
+    },
+    {
+      "character": "为",
+      "start": 12.72,
+      "end": 12.853
+    },
+    {
+      "character": "什",
+      "start": 12.853,
+      "end": 12.987
+    },
+    {
+      "character": "么",
+      "start": 12.987,
+      "end": 13.12
+    },
+    {
+      "character": "还",
+      "start": 13.12,
+      "end": 13.36
+    },
+    {
+      "character": "没",
+      "start": 13.36,
+      "end": 13.6
+    },
+    {
+      "character": "长",
+      "start": 13.6,
+      "end": 13.76
+    },
+    {
+      "character": "出",
+      "start": 13.76,
+      "end": 13.92
+    },
+    {
+      "character": "来",
+      "start": 13.92,
+      "end": 14.08
+    },
+    {
+      "character": "。",
+      "start": 14.08,
+      "end": 14.8
+    },
+    {
+      "character": "妈",
+      "start": 14.8,
+      "end": 15
+    },
+    {
+      "character": "妈",
+      "start": 15,
+      "end": 15.2
+    },
+    {
+      "character": "轻",
+      "start": 15.2,
+      "end": 15.4
+    },
+    {
+      "character": "轻",
+      "start": 15.4,
+      "end": 15.6
+    },
+    {
+      "character": "拦",
+      "start": 15.6,
+      "end": 15.76
+    },
+    {
+      "character": "住",
+      "start": 15.76,
+      "end": 16
+    },
+    {
+      "character": "它",
+      "start": 16,
+      "end": 16.08
+    },
+    {
+      "character": "：",
+      "start": 16.08,
+      "end": 16.72
+    },
+    {
+      "character": "别",
+      "start": 16.72,
+      "end": 17.04
+    },
+    {
+      "character": "急",
+      "start": 17.04,
+      "end": 17.44
+    },
+    {
+      "character": "，",
+      "start": 17.44,
+      "end": 17.68
+    },
+    {
+      "character": "花",
+      "start": 17.68,
+      "end": 17.84
+    },
+    {
+      "character": "有",
+      "start": 17.84,
+      "end": 18.02
+    },
+    {
+      "character": "自",
+      "start": 18.02,
+      "end": 18.2
+    },
+    {
+      "character": "己",
+      "start": 18.2,
+      "end": 18.38
+    },
+    {
+      "character": "的",
+      "start": 18.38,
+      "end": 18.56
+    },
+    {
+      "character": "季",
+      "start": 18.56,
+      "end": 18.76
+    },
+    {
+      "character": "节",
+      "start": 18.76,
+      "end": 18.96
+    },
+    {
+      "character": "。",
+      "start": 18.96,
+      "end": 19.52
+    },
+    {
+      "character": "今",
+      "start": 19.52,
+      "end": 19.76
+    },
+    {
+      "character": "天",
+      "start": 19.76,
+      "end": 20
+    },
+    {
+      "character": "浇",
+      "start": 20,
+      "end": 20.16
+    },
+    {
+      "character": "一",
+      "start": 20.16,
+      "end": 20.4
+    },
+    {
+      "character": "点",
+      "start": 20.4,
+      "end": 20.64
+    },
+    {
+      "character": "水",
+      "start": 20.64,
+      "end": 20.96
+    },
+    {
+      "character": "，",
+      "start": 20.96,
+      "end": 21.12
+    },
+    {
+      "character": "明",
+      "start": 21.12,
+      "end": 21.32
+    },
+    {
+      "character": "天",
+      "start": 21.32,
+      "end": 21.52
+    },
+    {
+      "character": "晒",
+      "start": 21.52,
+      "end": 21.68
+    },
+    {
+      "character": "一",
+      "start": 21.68,
+      "end": 21.813
+    },
+    {
+      "character": "会",
+      "start": 21.813,
+      "end": 21.947
+    },
+    {
+      "character": "儿",
+      "start": 21.947,
+      "end": 22.08
+    },
+    {
+      "character": "太",
+      "start": 22.08,
+      "end": 22.36
+    },
+    {
+      "character": "阳",
+      "start": 22.36,
+      "end": 22.64
+    },
+    {
+      "character": "，",
+      "start": 22.64,
+      "end": 22.8
+    },
+    {
+      "character": "别",
+      "start": 22.8,
+      "end": 22.96
+    },
+    {
+      "character": "把",
+      "start": 22.96,
+      "end": 23.2
+    },
+    {
+      "character": "种",
+      "start": 23.2,
+      "end": 23.36
+    },
+    {
+      "character": "子",
+      "start": 23.36,
+      "end": 23.52
+    },
+    {
+      "character": "拔",
+      "start": 23.52,
+      "end": 23.6
+    },
+    {
+      "character": "出",
+      "start": 23.6,
+      "end": 23.84
+    },
+    {
+      "character": "来",
+      "start": 23.84,
+      "end": 24.08
+    },
+    {
+      "character": "催",
+      "start": 24.08,
+      "end": 24.24
+    },
+    {
+      "character": "它",
+      "start": 24.24,
+      "end": 24.32
+    },
+    {
+      "character": "。",
+      "start": 24.32,
+      "end": 25.28
+    },
+    {
+      "character": "小",
+      "start": 25.28,
+      "end": 25.44
+    },
+    {
+      "character": "刺",
+      "start": 25.44,
+      "end": 25.68
+    },
+    {
+      "character": "猬",
+      "start": 25.68,
+      "end": 26
+    },
+    {
+      "character": "终",
+      "start": 26,
+      "end": 26.16
+    },
+    {
+      "character": "于",
+      "start": 26.16,
+      "end": 26.32
+    },
+    {
+      "character": "不",
+      "start": 26.32,
+      "end": 26.48
+    },
+    {
+      "character": "再",
+      "start": 26.48,
+      "end": 26.64
+    },
+    {
+      "character": "盯",
+      "start": 26.64,
+      "end": 26.8
+    },
+    {
+      "character": "着",
+      "start": 26.8,
+      "end": 26.96
+    },
+    {
+      "character": "别",
+      "start": 26.96,
+      "end": 27.147
+    },
+    {
+      "character": "人",
+      "start": 27.147,
+      "end": 27.333
+    },
+    {
+      "character": "的",
+      "start": 27.333,
+      "end": 27.52
+    },
+    {
+      "character": "花",
+      "start": 27.52,
+      "end": 27.84
+    },
+    {
+      "character": "，",
+      "start": 27.84,
+      "end": 28
+    },
+    {
+      "character": "而",
+      "start": 28,
+      "end": 28.16
+    },
+    {
+      "character": "是",
+      "start": 28.16,
+      "end": 28.32
+    },
+    {
+      "character": "每",
+      "start": 28.32,
+      "end": 28.56
+    },
+    {
+      "character": "天",
+      "start": 28.56,
+      "end": 28.8
+    },
+    {
+      "character": "认",
+      "start": 28.8,
+      "end": 29
+    },
+    {
+      "character": "真",
+      "start": 29,
+      "end": 29.2
+    },
+    {
+      "character": "照",
+      "start": 29.2,
+      "end": 29.4
+    },
+    {
+      "character": "料",
+      "start": 29.4,
+      "end": 29.6
+    },
+    {
+      "character": "自",
+      "start": 29.6,
+      "end": 29.76
+    },
+    {
+      "character": "己",
+      "start": 29.76,
+      "end": 29.92
+    },
+    {
+      "character": "的",
+      "start": 29.92,
+      "end": 30.08
+    },
+    {
+      "character": "小",
+      "start": 30.08,
+      "end": 30.32
+    },
+    {
+      "character": "土",
+      "start": 30.32,
+      "end": 30.56
+    },
+    {
+      "character": "坡",
+      "start": 30.56,
+      "end": 30.64
+    },
+    {
+      "character": "。",
+      "start": 30.64,
+      "end": 31.36
+    },
+    {
+      "character": "后",
+      "start": 31.36,
+      "end": 31.64
+    },
+    {
+      "character": "来",
+      "start": 31.64,
+      "end": 31.92
+    },
+    {
+      "character": "，",
+      "start": 31.92,
+      "end": 32.08
+    },
+    {
+      "character": "别",
+      "start": 32.08,
+      "end": 32.24
+    },
+    {
+      "character": "人",
+      "start": 32.24,
+      "end": 32.4
+    },
+    {
+      "character": "的",
+      "start": 32.4,
+      "end": 32.56
+    },
+    {
+      "character": "花",
+      "start": 32.56,
+      "end": 32.8
+    },
+    {
+      "character": "谢",
+      "start": 32.8,
+      "end": 32.96
+    },
+    {
+      "character": "了",
+      "start": 32.96,
+      "end": 33.36
+    },
+    {
+      "character": "，",
+      "start": 33.36,
+      "end": 33.6
+    },
+    {
+      "character": "它",
+      "start": 33.6,
+      "end": 33.8
+    },
+    {
+      "character": "的",
+      "start": 33.8,
+      "end": 34
+    },
+    {
+      "character": "花",
+      "start": 34,
+      "end": 34.4
+    },
+    {
+      "character": "却",
+      "start": 34.4,
+      "end": 34.64
+    },
+    {
+      "character": "在",
+      "start": 34.64,
+      "end": 34.88
+    },
+    {
+      "character": "更",
+      "start": 34.88,
+      "end": 35.04
+    },
+    {
+      "character": "晚",
+      "start": 35.04,
+      "end": 35.2
+    },
+    {
+      "character": "的",
+      "start": 35.2,
+      "end": 35.36
+    },
+    {
+      "character": "季",
+      "start": 35.36,
+      "end": 35.68
+    },
+    {
+      "character": "节",
+      "start": 35.68,
+      "end": 36
+    },
+    {
+      "character": "悄",
+      "start": 36,
+      "end": 36.2
+    },
+    {
+      "character": "悄",
+      "start": 36.2,
+      "end": 36.4
+    },
+    {
+      "character": "绽",
+      "start": 36.4,
+      "end": 36.56
+    },
+    {
+      "character": "放",
+      "start": 36.56,
+      "end": 36.72
+    },
+    {
+      "character": "。",
+      "start": 36.72,
+      "end": 37.52
+    },
+    {
+      "character": "书",
+      "start": 37.52,
+      "end": 37.68
+    },
+    {
+      "character": "里",
+      "start": 37.68,
+      "end": 38
+    },
+    {
+      "character": "说",
+      "start": 38,
+      "end": 38.32
+    },
+    {
+      "character": "：",
+      "start": 38.32,
+      "end": 38.48
+    },
+    {
+      "character": "“",
+      "start": 38.48,
+      "end": 38.64
+    },
+    {
+      "character": "慢",
+      "start": 38.64,
+      "end": 38.88
+    },
+    {
+      "character": "慢",
+      "start": 38.88,
+      "end": 39.12
+    },
+    {
+      "character": "来",
+      "start": 39.12,
+      "end": 39.44
+    },
+    {
+      "character": "，",
+      "start": 39.44,
+      "end": 39.6
+    },
+    {
+      "character": "比",
+      "start": 39.6,
+      "end": 39.8
+    },
+    {
+      "character": "较",
+      "start": 39.8,
+      "end": 40
+    },
+    {
+      "character": "快",
+      "start": 40,
+      "end": 40.16
+    },
+    {
+      "character": "！",
+      "start": 40.16,
+      "end": 40.6
+    },
+    {
+      "character": "”",
+      "start": 40.6,
+      "end": 41.04
+    },
+    {
+      "character": "教",
+      "start": 41.04,
+      "end": 41.24
+    },
+    {
+      "character": "育",
+      "start": 41.24,
+      "end": 41.44
+    },
+    {
+      "character": "不",
+      "start": 41.44,
+      "end": 41.64
+    },
+    {
+      "character": "是",
+      "start": 41.64,
+      "end": 41.84
+    },
+    {
+      "character": "催",
+      "start": 41.84,
+      "end": 42
+    },
+    {
+      "character": "熟",
+      "start": 42,
+      "end": 42.16
+    },
+    {
+      "character": "一",
+      "start": 42.16,
+      "end": 42.36
+    },
+    {
+      "character": "朵",
+      "start": 42.36,
+      "end": 42.56
+    },
+    {
+      "character": "花",
+      "start": 42.56,
+      "end": 42.96
+    },
+    {
+      "character": "，",
+      "start": 42.96,
+      "end": 43.12
+    },
+    {
+      "character": "而",
+      "start": 43.12,
+      "end": 43.28
+    },
+    {
+      "character": "是",
+      "start": 43.28,
+      "end": 43.44
+    },
+    {
+      "character": "守",
+      "start": 43.44,
+      "end": 43.64
+    },
+    {
+      "character": "护",
+      "start": 43.64,
+      "end": 43.84
+    },
+    {
+      "character": "它",
+      "start": 43.84,
+      "end": 44
+    },
+    {
+      "character": "自",
+      "start": 44,
+      "end": 44.187
+    },
+    {
+      "character": "己",
+      "start": 44.187,
+      "end": 44.373
+    },
+    {
+      "character": "的",
+      "start": 44.373,
+      "end": 44.56
+    },
+    {
+      "character": "花",
+      "start": 44.56,
+      "end": 44.8
+    },
+    {
+      "character": "期",
+      "start": 44.8,
+      "end": 44.88
+    },
+    {
+      "character": "。",
+      "start": 44.88,
+      "end": 45.6
+    },
+    {
+      "character": "孩",
+      "start": 45.6,
+      "end": 45.76
+    },
+    {
+      "character": "子",
+      "start": 45.76,
+      "end": 45.92
+    },
+    {
+      "character": "也",
+      "start": 45.92,
+      "end": 46.16
+    },
+    {
+      "character": "一",
+      "start": 46.16,
+      "end": 46.44
+    },
+    {
+      "character": "样",
+      "start": 46.44,
+      "end": 46.72
+    },
+    {
+      "character": "，",
+      "start": 46.72,
+      "end": 46.88
+    },
+    {
+      "character": "别",
+      "start": 46.88,
+      "end": 47.04
+    },
+    {
+      "character": "用",
+      "start": 47.04,
+      "end": 47.28
+    },
+    {
+      "character": "别",
+      "start": 47.28,
+      "end": 47.44
+    },
+    {
+      "character": "人",
+      "start": 47.44,
+      "end": 47.6
+    },
+    {
+      "character": "的",
+      "start": 47.6,
+      "end": 47.76
+    },
+    {
+      "character": "进",
+      "start": 47.76,
+      "end": 48
+    },
+    {
+      "character": "度",
+      "start": 48,
+      "end": 48.24
+    },
+    {
+      "character": "，",
+      "start": 48.24,
+      "end": 48.4
+    },
+    {
+      "character": "定",
+      "start": 48.4,
+      "end": 48.6
+    },
+    {
+      "character": "义",
+      "start": 48.6,
+      "end": 48.8
+    },
+    {
+      "character": "他",
+      "start": 48.8,
+      "end": 48.96
+    },
+    {
+      "character": "的",
+      "start": 48.96,
+      "end": 49.12
+    },
+    {
+      "character": "成",
+      "start": 49.12,
+      "end": 49.28
+    },
+    {
+      "character": "长",
+      "start": 49.28,
+      "end": 49.44
+    },
+    {
+      "character": "。",
+      "start": 49.44,
+      "end": 49.68
+    }
+  ],
+  "sentences": [
+    {
+      "text": "春天",
+      "start": 0,
+      "end": 1.12,
+      "characters": [
+        {
+          "character": "春",
+          "start": 0,
+          "end": 0.66
+        },
+        {
+          "character": "天",
+          "start": 0.66,
+          "end": 0.88
+        }
+      ]
+    },
+    {
+      "text": "小刺猬在林子里种下了一颗花种",
+      "start": 1.12,
+      "end": 4.4,
+      "characters": [
+        {
+          "character": "小",
+          "start": 1.12,
+          "end": 1.36
+        },
+        {
+          "character": "刺",
+          "start": 1.36,
+          "end": 1.44
+        },
+        {
+          "character": "猬",
+          "start": 1.44,
+          "end": 1.76
+        },
+        {
+          "character": "在",
+          "start": 1.76,
+          "end": 1.92
+        },
+        {
+          "character": "林",
+          "start": 1.92,
+          "end": 2.08
+        },
+        {
+          "character": "子",
+          "start": 2.08,
+          "end": 2.32
+        },
+        {
+          "character": "里",
+          "start": 2.32,
+          "end": 2.56
+        },
+        {
+          "character": "种",
+          "start": 2.56,
+          "end": 2.72
+        },
+        {
+          "character": "下",
+          "start": 2.72,
+          "end": 2.88
+        },
+        {
+          "character": "了",
+          "start": 2.88,
+          "end": 3.04
+        },
+        {
+          "character": "一",
+          "start": 3.04,
+          "end": 3.2
+        },
+        {
+          "character": "颗",
+          "start": 3.2,
+          "end": 3.44
+        },
+        {
+          "character": "花",
+          "start": 3.44,
+          "end": 3.68
+        },
+        {
+          "character": "种",
+          "start": 3.68,
+          "end": 3.76
+        }
+      ]
+    },
+    {
+      "text": "隔壁兔子的花先开了",
+      "start": 4.4,
+      "end": 6.56,
+      "characters": [
+        {
+          "character": "隔",
+          "start": 4.4,
+          "end": 4.6
+        },
+        {
+          "character": "壁",
+          "start": 4.6,
+          "end": 4.8
+        },
+        {
+          "character": "兔",
+          "start": 4.8,
+          "end": 4.92
+        },
+        {
+          "character": "子",
+          "start": 4.92,
+          "end": 5.04
+        },
+        {
+          "character": "的",
+          "start": 5.04,
+          "end": 5.28
+        },
+        {
+          "character": "花",
+          "start": 5.28,
+          "end": 5.52
+        },
+        {
+          "character": "先",
+          "start": 5.52,
+          "end": 5.76
+        },
+        {
+          "character": "开",
+          "start": 5.76,
+          "end": 6.08
+        },
+        {
+          "character": "了",
+          "start": 6.08,
+          "end": 6.4
+        }
+      ]
+    },
+    {
+      "text": "它每天跑去看",
+      "start": 6.56,
+      "end": 8.16,
+      "characters": [
+        {
+          "character": "它",
+          "start": 6.56,
+          "end": 6.72
+        },
+        {
+          "character": "每",
+          "start": 6.72,
+          "end": 6.92
+        },
+        {
+          "character": "天",
+          "start": 6.92,
+          "end": 7.12
+        },
+        {
+          "character": "跑",
+          "start": 7.12,
+          "end": 7.36
+        },
+        {
+          "character": "去",
+          "start": 7.36,
+          "end": 7.64
+        },
+        {
+          "character": "看",
+          "start": 7.64,
+          "end": 7.92
+        }
+      ]
+    },
+    {
+      "text": "越看越着急",
+      "start": 8.16,
+      "end": 9.76,
+      "characters": [
+        {
+          "character": "越",
+          "start": 8.16,
+          "end": 8.4
+        },
+        {
+          "character": "看",
+          "start": 8.4,
+          "end": 8.56
+        },
+        {
+          "character": "越",
+          "start": 8.56,
+          "end": 8.8
+        },
+        {
+          "character": "着",
+          "start": 8.8,
+          "end": 8.96
+        },
+        {
+          "character": "急",
+          "start": 8.96,
+          "end": 9.12
+        }
+      ]
+    },
+    {
+      "text": "它忍不住扒开泥土",
+      "start": 9.76,
+      "end": 11.44,
+      "characters": [
+        {
+          "character": "它",
+          "start": 9.76,
+          "end": 9.92
+        },
+        {
+          "character": "忍",
+          "start": 9.92,
+          "end": 10.08
+        },
+        {
+          "character": "不",
+          "start": 10.08,
+          "end": 10.24
+        },
+        {
+          "character": "住",
+          "start": 10.24,
+          "end": 10.4
+        },
+        {
+          "character": "扒",
+          "start": 10.4,
+          "end": 10.56
+        },
+        {
+          "character": "开",
+          "start": 10.56,
+          "end": 10.72
+        },
+        {
+          "character": "泥",
+          "start": 10.72,
+          "end": 11
+        },
+        {
+          "character": "土",
+          "start": 11,
+          "end": 11.28
+        }
+      ]
+    },
+    {
+      "text": "想看看自己的花为什么还没长出来",
+      "start": 11.44,
+      "end": 14.8,
+      "characters": [
+        {
+          "character": "想",
+          "start": 11.44,
+          "end": 11.6
+        },
+        {
+          "character": "看",
+          "start": 11.6,
+          "end": 11.76
+        },
+        {
+          "character": "看",
+          "start": 11.76,
+          "end": 11.92
+        },
+        {
+          "character": "自",
+          "start": 11.92,
+          "end": 12.08
+        },
+        {
+          "character": "己",
+          "start": 12.08,
+          "end": 12.24
+        },
+        {
+          "character": "的",
+          "start": 12.24,
+          "end": 12.4
+        },
+        {
+          "character": "花",
+          "start": 12.4,
+          "end": 12.72
+        },
+        {
+          "character": "为",
+          "start": 12.72,
+          "end": 12.853
+        },
+        {
+          "character": "什",
+          "start": 12.853,
+          "end": 12.987
+        },
+        {
+          "character": "么",
+          "start": 12.987,
+          "end": 13.12
+        },
+        {
+          "character": "还",
+          "start": 13.12,
+          "end": 13.36
+        },
+        {
+          "character": "没",
+          "start": 13.36,
+          "end": 13.6
+        },
+        {
+          "character": "长",
+          "start": 13.6,
+          "end": 13.76
+        },
+        {
+          "character": "出",
+          "start": 13.76,
+          "end": 13.92
+        },
+        {
+          "character": "来",
+          "start": 13.92,
+          "end": 14.08
+        }
+      ]
+    },
+    {
+      "text": "妈妈轻轻拦住它",
+      "start": 14.8,
+      "end": 16.72,
+      "characters": [
+        {
+          "character": "妈",
+          "start": 14.8,
+          "end": 15
+        },
+        {
+          "character": "妈",
+          "start": 15,
+          "end": 15.2
+        },
+        {
+          "character": "轻",
+          "start": 15.2,
+          "end": 15.4
+        },
+        {
+          "character": "轻",
+          "start": 15.4,
+          "end": 15.6
+        },
+        {
+          "character": "拦",
+          "start": 15.6,
+          "end": 15.76
+        },
+        {
+          "character": "住",
+          "start": 15.76,
+          "end": 16
+        },
+        {
+          "character": "它",
+          "start": 16,
+          "end": 16.08
+        }
+      ]
+    },
+    {
+      "text": "别急",
+      "start": 16.72,
+      "end": 17.68,
+      "characters": [
+        {
+          "character": "别",
+          "start": 16.72,
+          "end": 17.04
+        },
+        {
+          "character": "急",
+          "start": 17.04,
+          "end": 17.44
+        }
+      ]
+    },
+    {
+      "text": "花有自己的季节",
+      "start": 17.68,
+      "end": 19.52,
+      "characters": [
+        {
+          "character": "花",
+          "start": 17.68,
+          "end": 17.84
+        },
+        {
+          "character": "有",
+          "start": 17.84,
+          "end": 18.02
+        },
+        {
+          "character": "自",
+          "start": 18.02,
+          "end": 18.2
+        },
+        {
+          "character": "己",
+          "start": 18.2,
+          "end": 18.38
+        },
+        {
+          "character": "的",
+          "start": 18.38,
+          "end": 18.56
+        },
+        {
+          "character": "季",
+          "start": 18.56,
+          "end": 18.76
+        },
+        {
+          "character": "节",
+          "start": 18.76,
+          "end": 18.96
+        }
+      ]
+    },
+    {
+      "text": "今天浇一点水",
+      "start": 19.52,
+      "end": 21.12,
+      "characters": [
+        {
+          "character": "今",
+          "start": 19.52,
+          "end": 19.76
+        },
+        {
+          "character": "天",
+          "start": 19.76,
+          "end": 20
+        },
+        {
+          "character": "浇",
+          "start": 20,
+          "end": 20.16
+        },
+        {
+          "character": "一",
+          "start": 20.16,
+          "end": 20.4
+        },
+        {
+          "character": "点",
+          "start": 20.4,
+          "end": 20.64
+        },
+        {
+          "character": "水",
+          "start": 20.64,
+          "end": 20.96
+        }
+      ]
+    },
+    {
+      "text": "明天晒一会儿太阳",
+      "start": 21.12,
+      "end": 22.8,
+      "characters": [
+        {
+          "character": "明",
+          "start": 21.12,
+          "end": 21.32
+        },
+        {
+          "character": "天",
+          "start": 21.32,
+          "end": 21.52
+        },
+        {
+          "character": "晒",
+          "start": 21.52,
+          "end": 21.68
+        },
+        {
+          "character": "一",
+          "start": 21.68,
+          "end": 21.813
+        },
+        {
+          "character": "会",
+          "start": 21.813,
+          "end": 21.947
+        },
+        {
+          "character": "儿",
+          "start": 21.947,
+          "end": 22.08
+        },
+        {
+          "character": "太",
+          "start": 22.08,
+          "end": 22.36
+        },
+        {
+          "character": "阳",
+          "start": 22.36,
+          "end": 22.64
+        }
+      ]
+    },
+    {
+      "text": "别把种子拔出来催它",
+      "start": 22.8,
+      "end": 25.28,
+      "characters": [
+        {
+          "character": "别",
+          "start": 22.8,
+          "end": 22.96
+        },
+        {
+          "character": "把",
+          "start": 22.96,
+          "end": 23.2
+        },
+        {
+          "character": "种",
+          "start": 23.2,
+          "end": 23.36
+        },
+        {
+          "character": "子",
+          "start": 23.36,
+          "end": 23.52
+        },
+        {
+          "character": "拔",
+          "start": 23.52,
+          "end": 23.6
+        },
+        {
+          "character": "出",
+          "start": 23.6,
+          "end": 23.84
+        },
+        {
+          "character": "来",
+          "start": 23.84,
+          "end": 24.08
+        },
+        {
+          "character": "催",
+          "start": 24.08,
+          "end": 24.24
+        },
+        {
+          "character": "它",
+          "start": 24.24,
+          "end": 24.32
+        }
+      ]
+    },
+    {
+      "text": "小刺猬终于不再盯着别人的花",
+      "start": 25.28,
+      "end": 28.0,
+      "characters": [
+        {
+          "character": "小",
+          "start": 25.28,
+          "end": 25.44
+        },
+        {
+          "character": "刺",
+          "start": 25.44,
+          "end": 25.68
+        },
+        {
+          "character": "猬",
+          "start": 25.68,
+          "end": 26
+        },
+        {
+          "character": "终",
+          "start": 26,
+          "end": 26.16
+        },
+        {
+          "character": "于",
+          "start": 26.16,
+          "end": 26.32
+        },
+        {
+          "character": "不",
+          "start": 26.32,
+          "end": 26.48
+        },
+        {
+          "character": "再",
+          "start": 26.48,
+          "end": 26.64
+        },
+        {
+          "character": "盯",
+          "start": 26.64,
+          "end": 26.8
+        },
+        {
+          "character": "着",
+          "start": 26.8,
+          "end": 26.96
+        },
+        {
+          "character": "别",
+          "start": 26.96,
+          "end": 27.147
+        },
+        {
+          "character": "人",
+          "start": 27.147,
+          "end": 27.333
+        },
+        {
+          "character": "的",
+          "start": 27.333,
+          "end": 27.52
+        },
+        {
+          "character": "花",
+          "start": 27.52,
+          "end": 27.84
+        }
+      ]
+    },
+    {
+      "text": "而是每天认真照料自己的小土坡",
+      "start": 28,
+      "end": 31.36,
+      "characters": [
+        {
+          "character": "而",
+          "start": 28,
+          "end": 28.16
+        },
+        {
+          "character": "是",
+          "start": 28.16,
+          "end": 28.32
+        },
+        {
+          "character": "每",
+          "start": 28.32,
+          "end": 28.56
+        },
+        {
+          "character": "天",
+          "start": 28.56,
+          "end": 28.8
+        },
+        {
+          "character": "认",
+          "start": 28.8,
+          "end": 29
+        },
+        {
+          "character": "真",
+          "start": 29,
+          "end": 29.2
+        },
+        {
+          "character": "照",
+          "start": 29.2,
+          "end": 29.4
+        },
+        {
+          "character": "料",
+          "start": 29.4,
+          "end": 29.6
+        },
+        {
+          "character": "自",
+          "start": 29.6,
+          "end": 29.76
+        },
+        {
+          "character": "己",
+          "start": 29.76,
+          "end": 29.92
+        },
+        {
+          "character": "的",
+          "start": 29.92,
+          "end": 30.08
+        },
+        {
+          "character": "小",
+          "start": 30.08,
+          "end": 30.32
+        },
+        {
+          "character": "土",
+          "start": 30.32,
+          "end": 30.56
+        },
+        {
+          "character": "坡",
+          "start": 30.56,
+          "end": 30.64
+        }
+      ]
+    },
+    {
+      "text": "后来",
+      "start": 31.36,
+      "end": 32.08,
+      "characters": [
+        {
+          "character": "后",
+          "start": 31.36,
+          "end": 31.64
+        },
+        {
+          "character": "来",
+          "start": 31.64,
+          "end": 31.92
+        }
+      ]
+    },
+    {
+      "text": "别人的花谢了",
+      "start": 32.08,
+      "end": 33.6,
+      "characters": [
+        {
+          "character": "别",
+          "start": 32.08,
+          "end": 32.24
+        },
+        {
+          "character": "人",
+          "start": 32.24,
+          "end": 32.4
+        },
+        {
+          "character": "的",
+          "start": 32.4,
+          "end": 32.56
+        },
+        {
+          "character": "花",
+          "start": 32.56,
+          "end": 32.8
+        },
+        {
+          "character": "谢",
+          "start": 32.8,
+          "end": 32.96
+        },
+        {
+          "character": "了",
+          "start": 32.96,
+          "end": 33.36
+        }
+      ]
+    },
+    {
+      "text": "它的花却在更晚的季节悄悄绽放",
+      "start": 33.6,
+      "end": 37.52,
+      "characters": [
+        {
+          "character": "它",
+          "start": 33.6,
+          "end": 33.8
+        },
+        {
+          "character": "的",
+          "start": 33.8,
+          "end": 34
+        },
+        {
+          "character": "花",
+          "start": 34,
+          "end": 34.4
+        },
+        {
+          "character": "却",
+          "start": 34.4,
+          "end": 34.64
+        },
+        {
+          "character": "在",
+          "start": 34.64,
+          "end": 34.88
+        },
+        {
+          "character": "更",
+          "start": 34.88,
+          "end": 35.04
+        },
+        {
+          "character": "晚",
+          "start": 35.04,
+          "end": 35.2
+        },
+        {
+          "character": "的",
+          "start": 35.2,
+          "end": 35.36
+        },
+        {
+          "character": "季",
+          "start": 35.36,
+          "end": 35.68
+        },
+        {
+          "character": "节",
+          "start": 35.68,
+          "end": 36
+        },
+        {
+          "character": "悄",
+          "start": 36,
+          "end": 36.2
+        },
+        {
+          "character": "悄",
+          "start": 36.2,
+          "end": 36.4
+        },
+        {
+          "character": "绽",
+          "start": 36.4,
+          "end": 36.56
+        },
+        {
+          "character": "放",
+          "start": 36.56,
+          "end": 36.72
+        }
+      ]
+    },
+    {
+      "text": "书里说",
+      "start": 37.52,
+      "end": 38.48,
+      "characters": [
+        {
+          "character": "书",
+          "start": 37.52,
+          "end": 37.68
+        },
+        {
+          "character": "里",
+          "start": 37.68,
+          "end": 38
+        },
+        {
+          "character": "说",
+          "start": 38,
+          "end": 38.32
+        }
+      ]
+    },
+    {
+      "text": "“慢慢来",
+      "start": 38.48,
+      "end": 39.6,
+      "characters": [
+        {
+          "character": "“",
+          "start": 38.48,
+          "end": 38.64
+        },
+        {
+          "character": "慢",
+          "start": 38.64,
+          "end": 38.88
+        },
+        {
+          "character": "慢",
+          "start": 38.88,
+          "end": 39.12
+        },
+        {
+          "character": "来",
+          "start": 39.12,
+          "end": 39.44
+        }
+      ]
+    },
+    {
+      "text": "比较快",
+      "start": 39.6,
+      "end": 40.6,
+      "characters": [
+        {
+          "character": "比",
+          "start": 39.6,
+          "end": 39.8
+        },
+        {
+          "character": "较",
+          "start": 39.8,
+          "end": 40
+        },
+        {
+          "character": "快",
+          "start": 40,
+          "end": 40.16
+        }
+      ]
+    },
+    {
+      "text": "”教育不是催熟一朵花",
+      "start": 40.6,
+      "end": 43.12,
+      "characters": [
+        {
+          "character": "”",
+          "start": 40.6,
+          "end": 41.04
+        },
+        {
+          "character": "教",
+          "start": 41.04,
+          "end": 41.24
+        },
+        {
+          "character": "育",
+          "start": 41.24,
+          "end": 41.44
+        },
+        {
+          "character": "不",
+          "start": 41.44,
+          "end": 41.64
+        },
+        {
+          "character": "是",
+          "start": 41.64,
+          "end": 41.84
+        },
+        {
+          "character": "催",
+          "start": 41.84,
+          "end": 42
+        },
+        {
+          "character": "熟",
+          "start": 42,
+          "end": 42.16
+        },
+        {
+          "character": "一",
+          "start": 42.16,
+          "end": 42.36
+        },
+        {
+          "character": "朵",
+          "start": 42.36,
+          "end": 42.56
+        },
+        {
+          "character": "花",
+          "start": 42.56,
+          "end": 42.96
+        }
+      ]
+    },
+    {
+      "text": "而是守护它自己的花期",
+      "start": 43.12,
+      "end": 45.6,
+      "characters": [
+        {
+          "character": "而",
+          "start": 43.12,
+          "end": 43.28
+        },
+        {
+          "character": "是",
+          "start": 43.28,
+          "end": 43.44
+        },
+        {
+          "character": "守",
+          "start": 43.44,
+          "end": 43.64
+        },
+        {
+          "character": "护",
+          "start": 43.64,
+          "end": 43.84
+        },
+        {
+          "character": "它",
+          "start": 43.84,
+          "end": 44
+        },
+        {
+          "character": "自",
+          "start": 44,
+          "end": 44.187
+        },
+        {
+          "character": "己",
+          "start": 44.187,
+          "end": 44.373
+        },
+        {
+          "character": "的",
+          "start": 44.373,
+          "end": 44.56
+        },
+        {
+          "character": "花",
+          "start": 44.56,
+          "end": 44.8
+        },
+        {
+          "character": "期",
+          "start": 44.8,
+          "end": 44.88
+        }
+      ]
+    },
+    {
+      "text": "孩子也一样",
+      "start": 45.6,
+      "end": 46.88,
+      "characters": [
+        {
+          "character": "孩",
+          "start": 45.6,
+          "end": 45.76
+        },
+        {
+          "character": "子",
+          "start": 45.76,
+          "end": 45.92
+        },
+        {
+          "character": "也",
+          "start": 45.92,
+          "end": 46.16
+        },
+        {
+          "character": "一",
+          "start": 46.16,
+          "end": 46.44
+        },
+        {
+          "character": "样",
+          "start": 46.44,
+          "end": 46.72
+        }
+      ]
+    },
+    {
+      "text": "别用别人的进度",
+      "start": 46.88,
+      "end": 48.4,
+      "characters": [
+        {
+          "character": "别",
+          "start": 46.88,
+          "end": 47.04
+        },
+        {
+          "character": "用",
+          "start": 47.04,
+          "end": 47.28
+        },
+        {
+          "character": "别",
+          "start": 47.28,
+          "end": 47.44
+        },
+        {
+          "character": "人",
+          "start": 47.44,
+          "end": 47.6
+        },
+        {
+          "character": "的",
+          "start": 47.6,
+          "end": 47.76
+        },
+        {
+          "character": "进",
+          "start": 47.76,
+          "end": 48
+        },
+        {
+          "character": "度",
+          "start": 48,
+          "end": 48.24
+        }
+      ]
+    },
+    {
+      "text": "定义他的成长",
+      "start": 48.4,
+      "end": 49.68,
+      "characters": [
+        {
+          "character": "定",
+          "start": 48.4,
+          "end": 48.6
+        },
+        {
+          "character": "义",
+          "start": 48.6,
+          "end": 48.8
+        },
+        {
+          "character": "他",
+          "start": 48.8,
+          "end": 48.96
+        },
+        {
+          "character": "的",
+          "start": 48.96,
+          "end": 49.12
+        },
+        {
+          "character": "成",
+          "start": 49.12,
+          "end": 49.28
+        },
+        {
+          "character": "长",
+          "start": 49.28,
+          "end": 49.44
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01-seed-planting",
+      "label": "种下一颗花种",
+      "start": 0,
+      "end": 6.4
+    },
+    {
+      "id": "scene-02-neighbor-flower",
+      "label": "看见别人先开花",
+      "start": 6.56,
+      "end": 14.08
+    },
+    {
+      "id": "scene-03-digging-too-soon",
+      "label": "着急扒开泥土",
+      "start": 14.8,
+      "end": 24.32
+    },
+    {
+      "id": "scene-04-daily-care",
+      "label": "每天一点点照料",
+      "start": 25.28,
+      "end": 30.64
+    },
+    {
+      "id": "scene-05-own-season",
+      "label": "等到自己的花期",
+      "start": 31.36,
+      "end": 36.72
+    },
+    {
+      "id": "scene-06-golden-quote",
+      "label": "每朵花都有花期",
+      "start": 37.52,
+      "end": 49.68
+    }
+  ],
+  "narrationText": "春天，小刺猬在林子里种下了一颗花种。隔壁兔子的花先开了，它每天跑去看，越看越着急。它忍不住扒开泥土，想看看自己的花为什么还没长出来。妈妈轻轻拦住它：别急，花有自己的季节。今天浇一点水，明天晒一会儿太阳，别把种子拔出来催它。小刺猬终于不再盯着别人的花，而是每天认真照料自己的小土坡。后来，别人的花谢了，它的花却在更晚的季节悄悄绽放。书里说：“慢慢来，比较快！”教育不是催熟一朵花，而是守护它自己的花期。孩子也一样，别用别人的进度，定义他的成长。",
+  "sourceScriptId": "book-vo-animal-hedgehog-v002",
+  "sourceScriptVersion": 1,
+  "voiceSha256": "8a77731c49d0b0c24fe33a7d9a42dba66dd9f4a5db1feb10bdb3b73b6d3a3e2f"
+}

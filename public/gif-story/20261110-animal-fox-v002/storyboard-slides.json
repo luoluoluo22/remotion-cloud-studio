@@ -1,0 +1,88 @@
+{
+  "gapPolicy": "hold-previous",
+  "slides": [
+    {
+      "id": "slide-00",
+      "scene": "scene-01-berry-market",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-01-berry-market/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 0.0,
+      "end": 4.88
+    },
+    {
+      "id": "slide-01",
+      "scene": "scene-02-wants-everything",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-02-wants-everything/frame-02.png",
+      "sourceFrame": "frame-02.png",
+      "start": 4.88,
+      "end": 9.73
+    },
+    {
+      "id": "slide-02",
+      "scene": "scene-02-wants-everything",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-02-wants-everything/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 9.73,
+      "end": 14.58
+    },
+    {
+      "id": "slide-03",
+      "scene": "scene-03-rule-explained",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-03-rule-explained/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 14.58,
+      "end": 20.2
+    },
+    {
+      "id": "slide-04",
+      "scene": "scene-04-choose-fairly",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-04-choose-fairly/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 20.2,
+      "end": 24.48
+    },
+    {
+      "id": "slide-05",
+      "scene": "scene-05-share-with-rabbit",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-05-share-with-rabbit/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 24.48,
+      "end": 29.0
+    },
+    {
+      "id": "slide-06",
+      "scene": "scene-06-boundary-is-love",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-06-boundary-is-love/frame-01.png",
+      "sourceFrame": "frame-01.png",
+      "start": 29.0,
+      "end": 34.19
+    },
+    {
+      "id": "slide-07",
+      "scene": "scene-06-boundary-is-love",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-06-boundary-is-love/frame-02.png",
+      "sourceFrame": "frame-02.png",
+      "start": 34.19,
+      "end": 39.38
+    },
+    {
+      "id": "slide-08",
+      "scene": "scene-06-boundary-is-love",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-06-boundary-is-love/frame-03.png",
+      "sourceFrame": "frame-03.png",
+      "start": 39.38,
+      "end": 44.57
+    },
+    {
+      "id": "slide-09",
+      "scene": "scene-06-boundary-is-love",
+      "image": "gif-story/20261110-animal-fox-v002/scenes/scene-06-boundary-is-love/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 44.57,
+      "end": 49.76
+    }
+  ],
+  "durationSeconds": 49.76,
+  "transition": "cloudReveal",
+  "switchIntervalSeconds": 4.976
+}

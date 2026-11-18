@@ -1,0 +1,88 @@
+{
+  "gapPolicy": "hold-previous",
+  "slides": [
+    {
+      "id": "slide-00",
+      "scene": "scene-01-seed-planting",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-01-seed-planting/frame-02.png",
+      "sourceFrame": "frame-02.png",
+      "start": 0.0,
+      "end": 6.48
+    },
+    {
+      "id": "slide-01",
+      "scene": "scene-02-neighbor-flower",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-02-neighbor-flower/frame-02.png",
+      "sourceFrame": "frame-02.png",
+      "start": 6.48,
+      "end": 10.46
+    },
+    {
+      "id": "slide-02",
+      "scene": "scene-02-neighbor-flower",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-02-neighbor-flower/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 10.46,
+      "end": 14.44
+    },
+    {
+      "id": "slide-03",
+      "scene": "scene-03-digging-too-soon",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-03-digging-too-soon/frame-02.png",
+      "sourceFrame": "frame-02.png",
+      "start": 14.44,
+      "end": 19.62
+    },
+    {
+      "id": "slide-04",
+      "scene": "scene-03-digging-too-soon",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-03-digging-too-soon/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 19.62,
+      "end": 24.8
+    },
+    {
+      "id": "slide-05",
+      "scene": "scene-04-daily-care",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-04-daily-care/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 24.8,
+      "end": 31.0
+    },
+    {
+      "id": "slide-06",
+      "scene": "scene-05-own-season",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-05-own-season/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 31.0,
+      "end": 37.12
+    },
+    {
+      "id": "slide-07",
+      "scene": "scene-06-golden-quote",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-06-golden-quote/frame-01.png",
+      "sourceFrame": "frame-01.png",
+      "start": 37.12,
+      "end": 41.307
+    },
+    {
+      "id": "slide-08",
+      "scene": "scene-06-golden-quote",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-06-golden-quote/frame-02.png",
+      "sourceFrame": "frame-02.png",
+      "start": 41.307,
+      "end": 45.493
+    },
+    {
+      "id": "slide-09",
+      "scene": "scene-06-golden-quote",
+      "image": "gif-story/20261110-animal-hedgehog-v002/scenes/scene-06-golden-quote/frame-04.png",
+      "sourceFrame": "frame-04.png",
+      "start": 45.493,
+      "end": 49.68
+    }
+  ],
+  "durationSeconds": 49.68,
+  "transition": "pageFlip",
+  "switchIntervalSeconds": 4.968
+}

@@ -1,0 +1,2461 @@
+{
+  "text": "小狐狸看见森林集市上的浆果，想把整篮都带回家。妈妈提醒它：每家只能取一小篮，剩下的要留给其他动物。小狐狸跺脚问：“你为什么总是不答应我？”妈妈蹲下来解释：规则不是不爱你，是让每个伙伴都有份。你可以选红莓或蓝莓，但不能拿走别人的那份。小狐狸最后挑了一篮喜欢的，还分给迷路的小兔。回家路上，它明白妈妈说“不”，并没有让爱变少，反而让森林更公平、更安心。书中有句话：“别害怕对我保持公正的态度，这样反倒会让我有安全感。”爱不是满足所有要求，而是用稳定的边界保护孩子，也保护别人。",
+  "narrationText": "小狐狸看见森林集市上的浆果，想把整篮都带回家。妈妈提醒它：每家只能取一小篮，剩下的要留给其他动物。小狐狸跺脚问：“你为什么总是不答应我？”妈妈蹲下来解释：规则不是不爱你，是让每个伙伴都有份。你可以选红莓或蓝莓，但不能拿走别人的那份。小狐狸最后挑了一篮喜欢的，还分给迷路的小兔。回家路上，它明白妈妈说“不”，并没有让爱变少，反而让森林更公平、更安心。书中有句话：“别害怕对我保持公正的态度，这样反倒会让我有安全感。”爱不是满足所有要求，而是用稳定的边界保护孩子，也保护别人。",
+  "sourceScriptId": "book-vo-animal-fox-v002",
+  "sourceScriptVersion": 1,
+  "voiceSha256": "81e00f18a47a61a60e4e922a718390f819e059f196106ccec222d9dce987115f",
+  "duration": 49.76,
+  "goldenQuote": "别害怕对我保持公正的态度，这样反倒会让我有安全感。",
+  "characterTimings": [
+    {
+      "character": "小",
+      "start": 0,
+      "end": 0.24
+    },
+    {
+      "character": "狐",
+      "start": 0.24,
+      "end": 0.44
+    },
+    {
+      "character": "狸",
+      "start": 0.44,
+      "end": 0.64
+    },
+    {
+      "character": "看",
+      "start": 0.64,
+      "end": 0.88
+    },
+    {
+      "character": "见",
+      "start": 0.88,
+      "end": 1.12
+    },
+    {
+      "character": "森",
+      "start": 1.12,
+      "end": 1.32
+    },
+    {
+      "character": "林",
+      "start": 1.32,
+      "end": 1.52
+    },
+    {
+      "character": "集",
+      "start": 1.52,
+      "end": 1.68
+    },
+    {
+      "character": "市",
+      "start": 1.68,
+      "end": 1.84
+    },
+    {
+      "character": "上",
+      "start": 1.84,
+      "end": 2
+    },
+    {
+      "character": "的",
+      "start": 2,
+      "end": 2.16
+    },
+    {
+      "character": "浆",
+      "start": 2.16,
+      "end": 2.4
+    },
+    {
+      "character": "果",
+      "start": 2.4,
+      "end": 2.64
+    },
+    {
+      "character": "，",
+      "start": 2.64,
+      "end": 2.96
+    },
+    {
+      "character": "想",
+      "start": 2.96,
+      "end": 3.12
+    },
+    {
+      "character": "把",
+      "start": 3.12,
+      "end": 3.36
+    },
+    {
+      "character": "整",
+      "start": 3.36,
+      "end": 3.6
+    },
+    {
+      "character": "篮",
+      "start": 3.6,
+      "end": 3.84
+    },
+    {
+      "character": "都",
+      "start": 3.84,
+      "end": 4
+    },
+    {
+      "character": "带",
+      "start": 4,
+      "end": 4.16
+    },
+    {
+      "character": "回",
+      "start": 4.16,
+      "end": 4.4
+    },
+    {
+      "character": "家",
+      "start": 4.4,
+      "end": 4.64
+    },
+    {
+      "character": "。",
+      "start": 4.64,
+      "end": 5.12
+    },
+    {
+      "character": "妈",
+      "start": 5.12,
+      "end": 5.28
+    },
+    {
+      "character": "妈",
+      "start": 5.28,
+      "end": 5.44
+    },
+    {
+      "character": "提",
+      "start": 5.44,
+      "end": 5.6
+    },
+    {
+      "character": "醒",
+      "start": 5.6,
+      "end": 5.76
+    },
+    {
+      "character": "它",
+      "start": 5.76,
+      "end": 6
+    },
+    {
+      "character": "：",
+      "start": 6,
+      "end": 6.48
+    },
+    {
+      "character": "每",
+      "start": 6.48,
+      "end": 6.72
+    },
+    {
+      "character": "家",
+      "start": 6.72,
+      "end": 6.96
+    },
+    {
+      "character": "只",
+      "start": 6.96,
+      "end": 7.12
+    },
+    {
+      "character": "能",
+      "start": 7.12,
+      "end": 7.28
+    },
+    {
+      "character": "取",
+      "start": 7.28,
+      "end": 7.52
+    },
+    {
+      "character": "一",
+      "start": 7.52,
+      "end": 7.76
+    },
+    {
+      "character": "小",
+      "start": 7.76,
+      "end": 8
+    },
+    {
+      "character": "篮",
+      "start": 8,
+      "end": 8.48
+    },
+    {
+      "character": "，",
+      "start": 8.48,
+      "end": 8.56
+    },
+    {
+      "character": "剩",
+      "start": 8.56,
+      "end": 8.747
+    },
+    {
+      "character": "下",
+      "start": 8.747,
+      "end": 8.933
+    },
+    {
+      "character": "的",
+      "start": 8.933,
+      "end": 9.12
+    },
+    {
+      "character": "要",
+      "start": 9.12,
+      "end": 9.28
+    },
+    {
+      "character": "留",
+      "start": 9.28,
+      "end": 9.44
+    },
+    {
+      "character": "给",
+      "start": 9.44,
+      "end": 9.6
+    },
+    {
+      "character": "其",
+      "start": 9.6,
+      "end": 9.8
+    },
+    {
+      "character": "他",
+      "start": 9.8,
+      "end": 10
+    },
+    {
+      "character": "动",
+      "start": 10,
+      "end": 10.2
+    },
+    {
+      "character": "物",
+      "start": 10.2,
+      "end": 10.4
+    },
+    {
+      "character": "。",
+      "start": 10.4,
+      "end": 11.04
+    },
+    {
+      "character": "小",
+      "start": 11.04,
+      "end": 11.2
+    },
+    {
+      "character": "狐",
+      "start": 11.2,
+      "end": 11.36
+    },
+    {
+      "character": "狸",
+      "start": 11.36,
+      "end": 11.52
+    },
+    {
+      "character": "跺",
+      "start": 11.52,
+      "end": 11.68
+    },
+    {
+      "character": "脚",
+      "start": 11.68,
+      "end": 11.92
+    },
+    {
+      "character": "问",
+      "start": 11.92,
+      "end": 12.08
+    },
+    {
+      "character": "：",
+      "start": 12.08,
+      "end": 12.32
+    },
+    {
+      "character": "“",
+      "start": 12.32,
+      "end": 12.56
+    },
+    {
+      "character": "你",
+      "start": 12.56,
+      "end": 12.72
+    },
+    {
+      "character": "为",
+      "start": 12.72,
+      "end": 12.853
+    },
+    {
+      "character": "什",
+      "start": 12.853,
+      "end": 12.987
+    },
+    {
+      "character": "么",
+      "start": 12.987,
+      "end": 13.12
+    },
+    {
+      "character": "总",
+      "start": 13.12,
+      "end": 13.28
+    },
+    {
+      "character": "是",
+      "start": 13.28,
+      "end": 13.44
+    },
+    {
+      "character": "不",
+      "start": 13.44,
+      "end": 13.6
+    },
+    {
+      "character": "答",
+      "start": 13.6,
+      "end": 13.8
+    },
+    {
+      "character": "应",
+      "start": 13.8,
+      "end": 14
+    },
+    {
+      "character": "我",
+      "start": 14,
+      "end": 14.16
+    },
+    {
+      "character": "？",
+      "start": 14.16,
+      "end": 14.44
+    },
+    {
+      "character": "”",
+      "start": 14.44,
+      "end": 14.72
+    },
+    {
+      "character": "妈",
+      "start": 14.72,
+      "end": 14.88
+    },
+    {
+      "character": "妈",
+      "start": 14.88,
+      "end": 15.04
+    },
+    {
+      "character": "蹲",
+      "start": 15.04,
+      "end": 15.2
+    },
+    {
+      "character": "下",
+      "start": 15.2,
+      "end": 15.36
+    },
+    {
+      "character": "来",
+      "start": 15.36,
+      "end": 15.52
+    },
+    {
+      "character": "解",
+      "start": 15.52,
+      "end": 15.76
+    },
+    {
+      "character": "释",
+      "start": 15.76,
+      "end": 16
+    },
+    {
+      "character": "：",
+      "start": 16,
+      "end": 16.48
+    },
+    {
+      "character": "规",
+      "start": 16.48,
+      "end": 16.72
+    },
+    {
+      "character": "则",
+      "start": 16.72,
+      "end": 16.96
+    },
+    {
+      "character": "不",
+      "start": 16.96,
+      "end": 17.12
+    },
+    {
+      "character": "是",
+      "start": 17.12,
+      "end": 17.28
+    },
+    {
+      "character": "不",
+      "start": 17.28,
+      "end": 17.44
+    },
+    {
+      "character": "爱",
+      "start": 17.44,
+      "end": 17.72
+    },
+    {
+      "character": "你",
+      "start": 17.72,
+      "end": 18
+    },
+    {
+      "character": "，",
+      "start": 18,
+      "end": 18.32
+    },
+    {
+      "character": "是",
+      "start": 18.32,
+      "end": 18.4
+    },
+    {
+      "character": "让",
+      "start": 18.4,
+      "end": 18.64
+    },
+    {
+      "character": "每",
+      "start": 18.64,
+      "end": 18.8
+    },
+    {
+      "character": "个",
+      "start": 18.8,
+      "end": 18.96
+    },
+    {
+      "character": "伙",
+      "start": 18.96,
+      "end": 19.16
+    },
+    {
+      "character": "伴",
+      "start": 19.16,
+      "end": 19.36
+    },
+    {
+      "character": "都",
+      "start": 19.36,
+      "end": 19.56
+    },
+    {
+      "character": "有",
+      "start": 19.56,
+      "end": 19.76
+    },
+    {
+      "character": "份",
+      "start": 19.76,
+      "end": 20
+    },
+    {
+      "character": "。",
+      "start": 20,
+      "end": 20.4
+    },
+    {
+      "character": "你",
+      "start": 20.4,
+      "end": 20.533
+    },
+    {
+      "character": "可",
+      "start": 20.533,
+      "end": 20.667
+    },
+    {
+      "character": "以",
+      "start": 20.667,
+      "end": 20.8
+    },
+    {
+      "character": "选",
+      "start": 20.8,
+      "end": 21.04
+    },
+    {
+      "character": "红",
+      "start": 21.04,
+      "end": 21.28
+    },
+    {
+      "character": "莓",
+      "start": 21.28,
+      "end": 21.6
+    },
+    {
+      "character": "或",
+      "start": 21.6,
+      "end": 21.76
+    },
+    {
+      "character": "蓝",
+      "start": 21.76,
+      "end": 21.92
+    },
+    {
+      "character": "莓",
+      "start": 21.92,
+      "end": 22.4
+    },
+    {
+      "character": "，",
+      "start": 22.4,
+      "end": 22.52
+    },
+    {
+      "character": "但",
+      "start": 22.52,
+      "end": 22.64
+    },
+    {
+      "character": "不",
+      "start": 22.64,
+      "end": 22.8
+    },
+    {
+      "character": "能",
+      "start": 22.8,
+      "end": 22.96
+    },
+    {
+      "character": "拿",
+      "start": 22.96,
+      "end": 23.12
+    },
+    {
+      "character": "走",
+      "start": 23.12,
+      "end": 23.28
+    },
+    {
+      "character": "别",
+      "start": 23.28,
+      "end": 23.44
+    },
+    {
+      "character": "人",
+      "start": 23.44,
+      "end": 23.6
+    },
+    {
+      "character": "的",
+      "start": 23.6,
+      "end": 23.76
+    },
+    {
+      "character": "那",
+      "start": 23.76,
+      "end": 23.96
+    },
+    {
+      "character": "份",
+      "start": 23.96,
+      "end": 24.16
+    },
+    {
+      "character": "。",
+      "start": 24.16,
+      "end": 24.8
+    },
+    {
+      "character": "小",
+      "start": 24.8,
+      "end": 24.96
+    },
+    {
+      "character": "狐",
+      "start": 24.96,
+      "end": 25.16
+    },
+    {
+      "character": "狸",
+      "start": 25.16,
+      "end": 25.36
+    },
+    {
+      "character": "最",
+      "start": 25.36,
+      "end": 25.56
+    },
+    {
+      "character": "后",
+      "start": 25.56,
+      "end": 25.76
+    },
+    {
+      "character": "挑",
+      "start": 25.76,
+      "end": 25.92
+    },
+    {
+      "character": "了",
+      "start": 25.92,
+      "end": 26.04
+    },
+    {
+      "character": "一",
+      "start": 26.04,
+      "end": 26.16
+    },
+    {
+      "character": "篮",
+      "start": 26.16,
+      "end": 26.4
+    },
+    {
+      "character": "喜",
+      "start": 26.4,
+      "end": 26.64
+    },
+    {
+      "character": "欢",
+      "start": 26.64,
+      "end": 26.88
+    },
+    {
+      "character": "的",
+      "start": 26.88,
+      "end": 27.28
+    },
+    {
+      "character": "，",
+      "start": 27.28,
+      "end": 27.36
+    },
+    {
+      "character": "还",
+      "start": 27.36,
+      "end": 27.44
+    },
+    {
+      "character": "分",
+      "start": 27.44,
+      "end": 27.6
+    },
+    {
+      "character": "给",
+      "start": 27.6,
+      "end": 27.84
+    },
+    {
+      "character": "迷",
+      "start": 27.84,
+      "end": 28
+    },
+    {
+      "character": "路",
+      "start": 28,
+      "end": 28.16
+    },
+    {
+      "character": "的",
+      "start": 28.16,
+      "end": 28.36
+    },
+    {
+      "character": "小",
+      "start": 28.36,
+      "end": 28.56
+    },
+    {
+      "character": "兔",
+      "start": 28.56,
+      "end": 28.72
+    },
+    {
+      "character": "。",
+      "start": 28.72,
+      "end": 29.28
+    },
+    {
+      "character": "回",
+      "start": 29.28,
+      "end": 29.44
+    },
+    {
+      "character": "家",
+      "start": 29.44,
+      "end": 29.6
+    },
+    {
+      "character": "路",
+      "start": 29.6,
+      "end": 29.92
+    },
+    {
+      "character": "上",
+      "start": 29.92,
+      "end": 30.24
+    },
+    {
+      "character": "，",
+      "start": 30.24,
+      "end": 30.32
+    },
+    {
+      "character": "它",
+      "start": 30.32,
+      "end": 30.48
+    },
+    {
+      "character": "明",
+      "start": 30.48,
+      "end": 30.68
+    },
+    {
+      "character": "白",
+      "start": 30.68,
+      "end": 30.88
+    },
+    {
+      "character": "妈",
+      "start": 30.88,
+      "end": 31.04
+    },
+    {
+      "character": "妈",
+      "start": 31.04,
+      "end": 31.2
+    },
+    {
+      "character": "说",
+      "start": 31.2,
+      "end": 31.36
+    },
+    {
+      "character": "“",
+      "start": 31.36,
+      "end": 31.44
+    },
+    {
+      "character": "不",
+      "start": 31.44,
+      "end": 31.6
+    },
+    {
+      "character": "”",
+      "start": 31.6,
+      "end": 31.76
+    },
+    {
+      "character": "，",
+      "start": 31.76,
+      "end": 31.92
+    },
+    {
+      "character": "并",
+      "start": 31.92,
+      "end": 32.053
+    },
+    {
+      "character": "没",
+      "start": 32.053,
+      "end": 32.187
+    },
+    {
+      "character": "有",
+      "start": 32.187,
+      "end": 32.32
+    },
+    {
+      "character": "让",
+      "start": 32.32,
+      "end": 32.56
+    },
+    {
+      "character": "爱",
+      "start": 32.56,
+      "end": 32.8
+    },
+    {
+      "character": "变",
+      "start": 32.8,
+      "end": 33.04
+    },
+    {
+      "character": "少",
+      "start": 33.04,
+      "end": 33.28
+    },
+    {
+      "character": "，",
+      "start": 33.28,
+      "end": 33.68
+    },
+    {
+      "character": "反",
+      "start": 33.68,
+      "end": 33.84
+    },
+    {
+      "character": "而",
+      "start": 33.84,
+      "end": 34
+    },
+    {
+      "character": "让",
+      "start": 34,
+      "end": 34.24
+    },
+    {
+      "character": "森",
+      "start": 34.24,
+      "end": 34.44
+    },
+    {
+      "character": "林",
+      "start": 34.44,
+      "end": 34.64
+    },
+    {
+      "character": "更",
+      "start": 34.64,
+      "end": 34.88
+    },
+    {
+      "character": "公",
+      "start": 34.88,
+      "end": 35.16
+    },
+    {
+      "character": "平",
+      "start": 35.16,
+      "end": 35.44
+    },
+    {
+      "character": "、",
+      "start": 35.44,
+      "end": 35.52
+    },
+    {
+      "character": "更",
+      "start": 35.52,
+      "end": 35.76
+    },
+    {
+      "character": "安",
+      "start": 35.76,
+      "end": 36
+    },
+    {
+      "character": "心",
+      "start": 36,
+      "end": 36.24
+    },
+    {
+      "character": "。",
+      "start": 36.24,
+      "end": 36.8
+    },
+    {
+      "character": "书",
+      "start": 36.8,
+      "end": 36.96
+    },
+    {
+      "character": "中",
+      "start": 36.96,
+      "end": 37.16
+    },
+    {
+      "character": "有",
+      "start": 37.16,
+      "end": 37.36
+    },
+    {
+      "character": "句",
+      "start": 37.36,
+      "end": 37.56
+    },
+    {
+      "character": "话",
+      "start": 37.56,
+      "end": 37.76
+    },
+    {
+      "character": "：",
+      "start": 37.76,
+      "end": 38
+    },
+    {
+      "character": "“",
+      "start": 38,
+      "end": 38.24
+    },
+    {
+      "character": "别",
+      "start": 38.24,
+      "end": 38.4
+    },
+    {
+      "character": "害",
+      "start": 38.4,
+      "end": 38.64
+    },
+    {
+      "character": "怕",
+      "start": 38.64,
+      "end": 38.88
+    },
+    {
+      "character": "对",
+      "start": 38.88,
+      "end": 39.04
+    },
+    {
+      "character": "我",
+      "start": 39.04,
+      "end": 39.2
+    },
+    {
+      "character": "保",
+      "start": 39.2,
+      "end": 39.4
+    },
+    {
+      "character": "持",
+      "start": 39.4,
+      "end": 39.6
+    },
+    {
+      "character": "公",
+      "start": 39.6,
+      "end": 39.8
+    },
+    {
+      "character": "正",
+      "start": 39.8,
+      "end": 40
+    },
+    {
+      "character": "的",
+      "start": 40,
+      "end": 40.16
+    },
+    {
+      "character": "态",
+      "start": 40.16,
+      "end": 40.32
+    },
+    {
+      "character": "度",
+      "start": 40.32,
+      "end": 40.48
+    },
+    {
+      "character": "，",
+      "start": 40.48,
+      "end": 40.88
+    },
+    {
+      "character": "这",
+      "start": 40.88,
+      "end": 41.08
+    },
+    {
+      "character": "样",
+      "start": 41.08,
+      "end": 41.28
+    },
+    {
+      "character": "反",
+      "start": 41.28,
+      "end": 41.48
+    },
+    {
+      "character": "倒",
+      "start": 41.48,
+      "end": 41.68
+    },
+    {
+      "character": "会",
+      "start": 41.68,
+      "end": 41.84
+    },
+    {
+      "character": "让",
+      "start": 41.84,
+      "end": 42
+    },
+    {
+      "character": "我",
+      "start": 42,
+      "end": 42.16
+    },
+    {
+      "character": "有",
+      "start": 42.16,
+      "end": 42.32
+    },
+    {
+      "character": "安",
+      "start": 42.32,
+      "end": 42.533
+    },
+    {
+      "character": "全",
+      "start": 42.533,
+      "end": 42.747
+    },
+    {
+      "character": "感",
+      "start": 42.747,
+      "end": 42.96
+    },
+    {
+      "character": "。",
+      "start": 42.96,
+      "end": 43.24
+    },
+    {
+      "character": "”",
+      "start": 43.24,
+      "end": 43.52
+    },
+    {
+      "character": "爱",
+      "start": 43.52,
+      "end": 43.84
+    },
+    {
+      "character": "不",
+      "start": 43.84,
+      "end": 43.96
+    },
+    {
+      "character": "是",
+      "start": 43.96,
+      "end": 44.08
+    },
+    {
+      "character": "满",
+      "start": 44.08,
+      "end": 44.32
+    },
+    {
+      "character": "足",
+      "start": 44.32,
+      "end": 44.56
+    },
+    {
+      "character": "所",
+      "start": 44.56,
+      "end": 44.76
+    },
+    {
+      "character": "有",
+      "start": 44.76,
+      "end": 44.96
+    },
+    {
+      "character": "要",
+      "start": 44.96,
+      "end": 45.2
+    },
+    {
+      "character": "求",
+      "start": 45.2,
+      "end": 45.44
+    },
+    {
+      "character": "，",
+      "start": 45.44,
+      "end": 45.76
+    },
+    {
+      "character": "而",
+      "start": 45.76,
+      "end": 45.92
+    },
+    {
+      "character": "是",
+      "start": 45.92,
+      "end": 46.08
+    },
+    {
+      "character": "用",
+      "start": 46.08,
+      "end": 46.24
+    },
+    {
+      "character": "稳",
+      "start": 46.24,
+      "end": 46.427
+    },
+    {
+      "character": "定",
+      "start": 46.427,
+      "end": 46.613
+    },
+    {
+      "character": "的",
+      "start": 46.613,
+      "end": 46.8
+    },
+    {
+      "character": "边",
+      "start": 46.8,
+      "end": 47.08
+    },
+    {
+      "character": "界",
+      "start": 47.08,
+      "end": 47.36
+    },
+    {
+      "character": "保",
+      "start": 47.36,
+      "end": 47.6
+    },
+    {
+      "character": "护",
+      "start": 47.6,
+      "end": 47.84
+    },
+    {
+      "character": "孩",
+      "start": 47.84,
+      "end": 48.16
+    },
+    {
+      "character": "子",
+      "start": 48.16,
+      "end": 48.48
+    },
+    {
+      "character": "，",
+      "start": 48.48,
+      "end": 48.56
+    },
+    {
+      "character": "也",
+      "start": 48.56,
+      "end": 48.72
+    },
+    {
+      "character": "保",
+      "start": 48.72,
+      "end": 48.92
+    },
+    {
+      "character": "护",
+      "start": 48.92,
+      "end": 49.12
+    },
+    {
+      "character": "别",
+      "start": 49.12,
+      "end": 49.32
+    },
+    {
+      "character": "人",
+      "start": 49.32,
+      "end": 49.52
+    },
+    {
+      "character": "。",
+      "start": 49.52,
+      "end": 49.76
+    }
+  ],
+  "sentences": [
+    {
+      "text": "小狐狸看见森林集市上的浆果",
+      "start": 0,
+      "end": 2.96,
+      "characters": [
+        {
+          "character": "小",
+          "start": 0,
+          "end": 0.24
+        },
+        {
+          "character": "狐",
+          "start": 0.24,
+          "end": 0.44
+        },
+        {
+          "character": "狸",
+          "start": 0.44,
+          "end": 0.64
+        },
+        {
+          "character": "看",
+          "start": 0.64,
+          "end": 0.88
+        },
+        {
+          "character": "见",
+          "start": 0.88,
+          "end": 1.12
+        },
+        {
+          "character": "森",
+          "start": 1.12,
+          "end": 1.32
+        },
+        {
+          "character": "林",
+          "start": 1.32,
+          "end": 1.52
+        },
+        {
+          "character": "集",
+          "start": 1.52,
+          "end": 1.68
+        },
+        {
+          "character": "市",
+          "start": 1.68,
+          "end": 1.84
+        },
+        {
+          "character": "上",
+          "start": 1.84,
+          "end": 2
+        },
+        {
+          "character": "的",
+          "start": 2,
+          "end": 2.16
+        },
+        {
+          "character": "浆",
+          "start": 2.16,
+          "end": 2.4
+        },
+        {
+          "character": "果",
+          "start": 2.4,
+          "end": 2.64
+        }
+      ]
+    },
+    {
+      "text": "想把整篮都带回家",
+      "start": 2.96,
+      "end": 5.12,
+      "characters": [
+        {
+          "character": "想",
+          "start": 2.96,
+          "end": 3.12
+        },
+        {
+          "character": "把",
+          "start": 3.12,
+          "end": 3.36
+        },
+        {
+          "character": "整",
+          "start": 3.36,
+          "end": 3.6
+        },
+        {
+          "character": "篮",
+          "start": 3.6,
+          "end": 3.84
+        },
+        {
+          "character": "都",
+          "start": 3.84,
+          "end": 4
+        },
+        {
+          "character": "带",
+          "start": 4,
+          "end": 4.16
+        },
+        {
+          "character": "回",
+          "start": 4.16,
+          "end": 4.4
+        },
+        {
+          "character": "家",
+          "start": 4.4,
+          "end": 4.64
+        }
+      ]
+    },
+    {
+      "text": "妈妈提醒它",
+      "start": 5.12,
+      "end": 6.48,
+      "characters": [
+        {
+          "character": "妈",
+          "start": 5.12,
+          "end": 5.28
+        },
+        {
+          "character": "妈",
+          "start": 5.28,
+          "end": 5.44
+        },
+        {
+          "character": "提",
+          "start": 5.44,
+          "end": 5.6
+        },
+        {
+          "character": "醒",
+          "start": 5.6,
+          "end": 5.76
+        },
+        {
+          "character": "它",
+          "start": 5.76,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "text": "每家只能取一小篮",
+      "start": 6.48,
+      "end": 8.56,
+      "characters": [
+        {
+          "character": "每",
+          "start": 6.48,
+          "end": 6.72
+        },
+        {
+          "character": "家",
+          "start": 6.72,
+          "end": 6.96
+        },
+        {
+          "character": "只",
+          "start": 6.96,
+          "end": 7.12
+        },
+        {
+          "character": "能",
+          "start": 7.12,
+          "end": 7.28
+        },
+        {
+          "character": "取",
+          "start": 7.28,
+          "end": 7.52
+        },
+        {
+          "character": "一",
+          "start": 7.52,
+          "end": 7.76
+        },
+        {
+          "character": "小",
+          "start": 7.76,
+          "end": 8
+        },
+        {
+          "character": "篮",
+          "start": 8,
+          "end": 8.48
+        }
+      ]
+    },
+    {
+      "text": "剩下的要留给其他动物",
+      "start": 8.56,
+      "end": 11.04,
+      "characters": [
+        {
+          "character": "剩",
+          "start": 8.56,
+          "end": 8.747
+        },
+        {
+          "character": "下",
+          "start": 8.747,
+          "end": 8.933
+        },
+        {
+          "character": "的",
+          "start": 8.933,
+          "end": 9.12
+        },
+        {
+          "character": "要",
+          "start": 9.12,
+          "end": 9.28
+        },
+        {
+          "character": "留",
+          "start": 9.28,
+          "end": 9.44
+        },
+        {
+          "character": "给",
+          "start": 9.44,
+          "end": 9.6
+        },
+        {
+          "character": "其",
+          "start": 9.6,
+          "end": 9.8
+        },
+        {
+          "character": "他",
+          "start": 9.8,
+          "end": 10
+        },
+        {
+          "character": "动",
+          "start": 10,
+          "end": 10.2
+        },
+        {
+          "character": "物",
+          "start": 10.2,
+          "end": 10.4
+        }
+      ]
+    },
+    {
+      "text": "小狐狸跺脚问",
+      "start": 11.04,
+      "end": 12.32,
+      "characters": [
+        {
+          "character": "小",
+          "start": 11.04,
+          "end": 11.2
+        },
+        {
+          "character": "狐",
+          "start": 11.2,
+          "end": 11.36
+        },
+        {
+          "character": "狸",
+          "start": 11.36,
+          "end": 11.52
+        },
+        {
+          "character": "跺",
+          "start": 11.52,
+          "end": 11.68
+        },
+        {
+          "character": "脚",
+          "start": 11.68,
+          "end": 11.92
+        },
+        {
+          "character": "问",
+          "start": 11.92,
+          "end": 12.08
+        }
+      ]
+    },
+    {
+      "text": "“你为什么总是不答应我",
+      "start": 12.32,
+      "end": 14.44,
+      "characters": [
+        {
+          "character": "“",
+          "start": 12.32,
+          "end": 12.56
+        },
+        {
+          "character": "你",
+          "start": 12.56,
+          "end": 12.72
+        },
+        {
+          "character": "为",
+          "start": 12.72,
+          "end": 12.853
+        },
+        {
+          "character": "什",
+          "start": 12.853,
+          "end": 12.987
+        },
+        {
+          "character": "么",
+          "start": 12.987,
+          "end": 13.12
+        },
+        {
+          "character": "总",
+          "start": 13.12,
+          "end": 13.28
+        },
+        {
+          "character": "是",
+          "start": 13.28,
+          "end": 13.44
+        },
+        {
+          "character": "不",
+          "start": 13.44,
+          "end": 13.6
+        },
+        {
+          "character": "答",
+          "start": 13.6,
+          "end": 13.8
+        },
+        {
+          "character": "应",
+          "start": 13.8,
+          "end": 14
+        },
+        {
+          "character": "我",
+          "start": 14,
+          "end": 14.16
+        }
+      ]
+    },
+    {
+      "text": "”妈妈蹲下来解释",
+      "start": 14.44,
+      "end": 16.48,
+      "characters": [
+        {
+          "character": "”",
+          "start": 14.44,
+          "end": 14.72
+        },
+        {
+          "character": "妈",
+          "start": 14.72,
+          "end": 14.88
+        },
+        {
+          "character": "妈",
+          "start": 14.88,
+          "end": 15.04
+        },
+        {
+          "character": "蹲",
+          "start": 15.04,
+          "end": 15.2
+        },
+        {
+          "character": "下",
+          "start": 15.2,
+          "end": 15.36
+        },
+        {
+          "character": "来",
+          "start": 15.36,
+          "end": 15.52
+        },
+        {
+          "character": "解",
+          "start": 15.52,
+          "end": 15.76
+        },
+        {
+          "character": "释",
+          "start": 15.76,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "text": "规则不是不爱你",
+      "start": 16.48,
+      "end": 18.32,
+      "characters": [
+        {
+          "character": "规",
+          "start": 16.48,
+          "end": 16.72
+        },
+        {
+          "character": "则",
+          "start": 16.72,
+          "end": 16.96
+        },
+        {
+          "character": "不",
+          "start": 16.96,
+          "end": 17.12
+        },
+        {
+          "character": "是",
+          "start": 17.12,
+          "end": 17.28
+        },
+        {
+          "character": "不",
+          "start": 17.28,
+          "end": 17.44
+        },
+        {
+          "character": "爱",
+          "start": 17.44,
+          "end": 17.72
+        },
+        {
+          "character": "你",
+          "start": 17.72,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "text": "是让每个伙伴都有份",
+      "start": 18.32,
+      "end": 20.4,
+      "characters": [
+        {
+          "character": "是",
+          "start": 18.32,
+          "end": 18.4
+        },
+        {
+          "character": "让",
+          "start": 18.4,
+          "end": 18.64
+        },
+        {
+          "character": "每",
+          "start": 18.64,
+          "end": 18.8
+        },
+        {
+          "character": "个",
+          "start": 18.8,
+          "end": 18.96
+        },
+        {
+          "character": "伙",
+          "start": 18.96,
+          "end": 19.16
+        },
+        {
+          "character": "伴",
+          "start": 19.16,
+          "end": 19.36
+        },
+        {
+          "character": "都",
+          "start": 19.36,
+          "end": 19.56
+        },
+        {
+          "character": "有",
+          "start": 19.56,
+          "end": 19.76
+        },
+        {
+          "character": "份",
+          "start": 19.76,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "text": "你可以选红莓或蓝莓",
+      "start": 20.4,
+      "end": 22.52,
+      "characters": [
+        {
+          "character": "你",
+          "start": 20.4,
+          "end": 20.533
+        },
+        {
+          "character": "可",
+          "start": 20.533,
+          "end": 20.667
+        },
+        {
+          "character": "以",
+          "start": 20.667,
+          "end": 20.8
+        },
+        {
+          "character": "选",
+          "start": 20.8,
+          "end": 21.04
+        },
+        {
+          "character": "红",
+          "start": 21.04,
+          "end": 21.28
+        },
+        {
+          "character": "莓",
+          "start": 21.28,
+          "end": 21.6
+        },
+        {
+          "character": "或",
+          "start": 21.6,
+          "end": 21.76
+        },
+        {
+          "character": "蓝",
+          "start": 21.76,
+          "end": 21.92
+        },
+        {
+          "character": "莓",
+          "start": 21.92,
+          "end": 22.4
+        }
+      ]
+    },
+    {
+      "text": "但不能拿走别人的那份",
+      "start": 22.52,
+      "end": 24.8,
+      "characters": [
+        {
+          "character": "但",
+          "start": 22.52,
+          "end": 22.64
+        },
+        {
+          "character": "不",
+          "start": 22.64,
+          "end": 22.8
+        },
+        {
+          "character": "能",
+          "start": 22.8,
+          "end": 22.96
+        },
+        {
+          "character": "拿",
+          "start": 22.96,
+          "end": 23.12
+        },
+        {
+          "character": "走",
+          "start": 23.12,
+          "end": 23.28
+        },
+        {
+          "character": "别",
+          "start": 23.28,
+          "end": 23.44
+        },
+        {
+          "character": "人",
+          "start": 23.44,
+          "end": 23.6
+        },
+        {
+          "character": "的",
+          "start": 23.6,
+          "end": 23.76
+        },
+        {
+          "character": "那",
+          "start": 23.76,
+          "end": 23.96
+        },
+        {
+          "character": "份",
+          "start": 23.96,
+          "end": 24.16
+        }
+      ]
+    },
+    {
+      "text": "小狐狸最后挑了一篮喜欢的",
+      "start": 24.8,
+      "end": 27.36,
+      "characters": [
+        {
+          "character": "小",
+          "start": 24.8,
+          "end": 24.96
+        },
+        {
+          "character": "狐",
+          "start": 24.96,
+          "end": 25.16
+        },
+        {
+          "character": "狸",
+          "start": 25.16,
+          "end": 25.36
+        },
+        {
+          "character": "最",
+          "start": 25.36,
+          "end": 25.56
+        },
+        {
+          "character": "后",
+          "start": 25.56,
+          "end": 25.76
+        },
+        {
+          "character": "挑",
+          "start": 25.76,
+          "end": 25.92
+        },
+        {
+          "character": "了",
+          "start": 25.92,
+          "end": 26.04
+        },
+        {
+          "character": "一",
+          "start": 26.04,
+          "end": 26.16
+        },
+        {
+          "character": "篮",
+          "start": 26.16,
+          "end": 26.4
+        },
+        {
+          "character": "喜",
+          "start": 26.4,
+          "end": 26.64
+        },
+        {
+          "character": "欢",
+          "start": 26.64,
+          "end": 26.88
+        },
+        {
+          "character": "的",
+          "start": 26.88,
+          "end": 27.28
+        }
+      ]
+    },
+    {
+      "text": "还分给迷路的小兔",
+      "start": 27.36,
+      "end": 29.28,
+      "characters": [
+        {
+          "character": "还",
+          "start": 27.36,
+          "end": 27.44
+        },
+        {
+          "character": "分",
+          "start": 27.44,
+          "end": 27.6
+        },
+        {
+          "character": "给",
+          "start": 27.6,
+          "end": 27.84
+        },
+        {
+          "character": "迷",
+          "start": 27.84,
+          "end": 28
+        },
+        {
+          "character": "路",
+          "start": 28,
+          "end": 28.16
+        },
+        {
+          "character": "的",
+          "start": 28.16,
+          "end": 28.36
+        },
+        {
+          "character": "小",
+          "start": 28.36,
+          "end": 28.56
+        },
+        {
+          "character": "兔",
+          "start": 28.56,
+          "end": 28.72
+        }
+      ]
+    },
+    {
+      "text": "回家路上",
+      "start": 29.28,
+      "end": 30.32,
+      "characters": [
+        {
+          "character": "回",
+          "start": 29.28,
+          "end": 29.44
+        },
+        {
+          "character": "家",
+          "start": 29.44,
+          "end": 29.6
+        },
+        {
+          "character": "路",
+          "start": 29.6,
+          "end": 29.92
+        },
+        {
+          "character": "上",
+          "start": 29.92,
+          "end": 30.24
+        }
+      ]
+    },
+    {
+      "text": "它明白妈妈说“不”",
+      "start": 30.32,
+      "end": 31.92,
+      "characters": [
+        {
+          "character": "它",
+          "start": 30.32,
+          "end": 30.48
+        },
+        {
+          "character": "明",
+          "start": 30.48,
+          "end": 30.68
+        },
+        {
+          "character": "白",
+          "start": 30.68,
+          "end": 30.88
+        },
+        {
+          "character": "妈",
+          "start": 30.88,
+          "end": 31.04
+        },
+        {
+          "character": "妈",
+          "start": 31.04,
+          "end": 31.2
+        },
+        {
+          "character": "说",
+          "start": 31.2,
+          "end": 31.36
+        },
+        {
+          "character": "“",
+          "start": 31.36,
+          "end": 31.44
+        },
+        {
+          "character": "不",
+          "start": 31.44,
+          "end": 31.6
+        },
+        {
+          "character": "”",
+          "start": 31.6,
+          "end": 31.76
+        }
+      ]
+    },
+    {
+      "text": "并没有让爱变少",
+      "start": 31.92,
+      "end": 33.68,
+      "characters": [
+        {
+          "character": "并",
+          "start": 31.92,
+          "end": 32.053
+        },
+        {
+          "character": "没",
+          "start": 32.053,
+          "end": 32.187
+        },
+        {
+          "character": "有",
+          "start": 32.187,
+          "end": 32.32
+        },
+        {
+          "character": "让",
+          "start": 32.32,
+          "end": 32.56
+        },
+        {
+          "character": "爱",
+          "start": 32.56,
+          "end": 32.8
+        },
+        {
+          "character": "变",
+          "start": 32.8,
+          "end": 33.04
+        },
+        {
+          "character": "少",
+          "start": 33.04,
+          "end": 33.28
+        }
+      ]
+    },
+    {
+      "text": "反而让森林更公平",
+      "start": 33.68,
+      "end": 35.52,
+      "characters": [
+        {
+          "character": "反",
+          "start": 33.68,
+          "end": 33.84
+        },
+        {
+          "character": "而",
+          "start": 33.84,
+          "end": 34
+        },
+        {
+          "character": "让",
+          "start": 34,
+          "end": 34.24
+        },
+        {
+          "character": "森",
+          "start": 34.24,
+          "end": 34.44
+        },
+        {
+          "character": "林",
+          "start": 34.44,
+          "end": 34.64
+        },
+        {
+          "character": "更",
+          "start": 34.64,
+          "end": 34.88
+        },
+        {
+          "character": "公",
+          "start": 34.88,
+          "end": 35.16
+        },
+        {
+          "character": "平",
+          "start": 35.16,
+          "end": 35.44
+        }
+      ]
+    },
+    {
+      "text": "更安心",
+      "start": 35.52,
+      "end": 36.8,
+      "characters": [
+        {
+          "character": "更",
+          "start": 35.52,
+          "end": 35.76
+        },
+        {
+          "character": "安",
+          "start": 35.76,
+          "end": 36
+        },
+        {
+          "character": "心",
+          "start": 36,
+          "end": 36.24
+        }
+      ]
+    },
+    {
+      "text": "书中有句话",
+      "start": 36.8,
+      "end": 38.0,
+      "characters": [
+        {
+          "character": "书",
+          "start": 36.8,
+          "end": 36.96
+        },
+        {
+          "character": "中",
+          "start": 36.96,
+          "end": 37.16
+        },
+        {
+          "character": "有",
+          "start": 37.16,
+          "end": 37.36
+        },
+        {
+          "character": "句",
+          "start": 37.36,
+          "end": 37.56
+        },
+        {
+          "character": "话",
+          "start": 37.56,
+          "end": 37.76
+        }
+      ]
+    },
+    {
+      "text": "“别害怕对我保持公正的态度",
+      "start": 38,
+      "end": 40.88,
+      "characters": [
+        {
+          "character": "“",
+          "start": 38,
+          "end": 38.24
+        },
+        {
+          "character": "别",
+          "start": 38.24,
+          "end": 38.4
+        },
+        {
+          "character": "害",
+          "start": 38.4,
+          "end": 38.64
+        },
+        {
+          "character": "怕",
+          "start": 38.64,
+          "end": 38.88
+        },
+        {
+          "character": "对",
+          "start": 38.88,
+          "end": 39.04
+        },
+        {
+          "character": "我",
+          "start": 39.04,
+          "end": 39.2
+        },
+        {
+          "character": "保",
+          "start": 39.2,
+          "end": 39.4
+        },
+        {
+          "character": "持",
+          "start": 39.4,
+          "end": 39.6
+        },
+        {
+          "character": "公",
+          "start": 39.6,
+          "end": 39.8
+        },
+        {
+          "character": "正",
+          "start": 39.8,
+          "end": 40
+        },
+        {
+          "character": "的",
+          "start": 40,
+          "end": 40.16
+        },
+        {
+          "character": "态",
+          "start": 40.16,
+          "end": 40.32
+        },
+        {
+          "character": "度",
+          "start": 40.32,
+          "end": 40.48
+        }
+      ]
+    },
+    {
+      "text": "这样反倒会让我有安全感",
+      "start": 40.88,
+      "end": 43.24,
+      "characters": [
+        {
+          "character": "这",
+          "start": 40.88,
+          "end": 41.08
+        },
+        {
+          "character": "样",
+          "start": 41.08,
+          "end": 41.28
+        },
+        {
+          "character": "反",
+          "start": 41.28,
+          "end": 41.48
+        },
+        {
+          "character": "倒",
+          "start": 41.48,
+          "end": 41.68
+        },
+        {
+          "character": "会",
+          "start": 41.68,
+          "end": 41.84
+        },
+        {
+          "character": "让",
+          "start": 41.84,
+          "end": 42
+        },
+        {
+          "character": "我",
+          "start": 42,
+          "end": 42.16
+        },
+        {
+          "character": "有",
+          "start": 42.16,
+          "end": 42.32
+        },
+        {
+          "character": "安",
+          "start": 42.32,
+          "end": 42.533
+        },
+        {
+          "character": "全",
+          "start": 42.533,
+          "end": 42.747
+        },
+        {
+          "character": "感",
+          "start": 42.747,
+          "end": 42.96
+        }
+      ]
+    },
+    {
+      "text": "”爱不是满足所有要求",
+      "start": 43.24,
+      "end": 45.76,
+      "characters": [
+        {
+          "character": "”",
+          "start": 43.24,
+          "end": 43.52
+        },
+        {
+          "character": "爱",
+          "start": 43.52,
+          "end": 43.84
+        },
+        {
+          "character": "不",
+          "start": 43.84,
+          "end": 43.96
+        },
+        {
+          "character": "是",
+          "start": 43.96,
+          "end": 44.08
+        },
+        {
+          "character": "满",
+          "start": 44.08,
+          "end": 44.32
+        },
+        {
+          "character": "足",
+          "start": 44.32,
+          "end": 44.56
+        },
+        {
+          "character": "所",
+          "start": 44.56,
+          "end": 44.76
+        },
+        {
+          "character": "有",
+          "start": 44.76,
+          "end": 44.96
+        },
+        {
+          "character": "要",
+          "start": 44.96,
+          "end": 45.2
+        },
+        {
+          "character": "求",
+          "start": 45.2,
+          "end": 45.44
+        }
+      ]
+    },
+    {
+      "text": "而是用稳定的边界保护孩子",
+      "start": 45.76,
+      "end": 48.56,
+      "characters": [
+        {
+          "character": "而",
+          "start": 45.76,
+          "end": 45.92
+        },
+        {
+          "character": "是",
+          "start": 45.92,
+          "end": 46.08
+        },
+        {
+          "character": "用",
+          "start": 46.08,
+          "end": 46.24
+        },
+        {
+          "character": "稳",
+          "start": 46.24,
+          "end": 46.427
+        },
+        {
+          "character": "定",
+          "start": 46.427,
+          "end": 46.613
+        },
+        {
+          "character": "的",
+          "start": 46.613,
+          "end": 46.8
+        },
+        {
+          "character": "边",
+          "start": 46.8,
+          "end": 47.08
+        },
+        {
+          "character": "界",
+          "start": 47.08,
+          "end": 47.36
+        },
+        {
+          "character": "保",
+          "start": 47.36,
+          "end": 47.6
+        },
+        {
+          "character": "护",
+          "start": 47.6,
+          "end": 47.84
+        },
+        {
+          "character": "孩",
+          "start": 47.84,
+          "end": 48.16
+        },
+        {
+          "character": "子",
+          "start": 48.16,
+          "end": 48.48
+        }
+      ]
+    },
+    {
+      "text": "也保护别人",
+      "start": 48.56,
+      "end": 49.76,
+      "characters": [
+        {
+          "character": "也",
+          "start": 48.56,
+          "end": 48.72
+        },
+        {
+          "character": "保",
+          "start": 48.72,
+          "end": 48.92
+        },
+        {
+          "character": "护",
+          "start": 48.92,
+          "end": 49.12
+        },
+        {
+          "character": "别",
+          "start": 49.12,
+          "end": 49.32
+        },
+        {
+          "character": "人",
+          "start": 49.32,
+          "end": 49.52
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01-berry-market",
+      "label": "看见满篮浆果",
+      "start": 0,
+      "end": 4.64
+    },
+    {
+      "id": "scene-02-wants-everything",
+      "label": "小狐狸不高兴",
+      "start": 5.12,
+      "end": 14.44
+    },
+    {
+      "id": "scene-03-rule-explained",
+      "label": "妈妈解释森林约定",
+      "start": 14.72,
+      "end": 20
+    },
+    {
+      "id": "scene-04-choose-fairly",
+      "label": "在规则内做选择",
+      "start": 20.4,
+      "end": 24.16
+    },
+    {
+      "id": "scene-05-share-with-rabbit",
+      "label": "主动分享给小兔",
+      "start": 24.8,
+      "end": 28.72
+    },
+    {
+      "id": "scene-06-boundary-is-love",
+      "label": "规则让爱更安心",
+      "start": 29.28,
+      "end": 49.76
+    }
+  ]
+}

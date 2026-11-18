@@ -1,14 +1,50 @@
 {
-  "name": "remotion-cloud-studio",
+  "name": "remotion-test",
   "version": "1.0.0",
-  "description": "Cloud-rendered Remotion videos with Microsoft Neural TTS via GitHub Actions",
-  "scripts": {
-    "build": "remotion render src/index.ts CloudVideo out/video.mp4"
+  "description": "My Remotion video",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
   },
+  "private": true,
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remotion": "^4.0.247",
-    "@remotion/cli": "^4.0.247"
+    "@remotion/cli": "4.0.539",
+    "@elevenlabs/elevenlabs-js": "^1.50.0",
+    "dotenv": "^16.4.7",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.539",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.539",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "preview:styles": "node scripts/serve-style-preview.mjs",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "video:validate": "node scripts/video-pipeline.mjs validate",
+    "video:preview": "node scripts/video-pipeline.mjs preview",
+    "video:render": "node scripts/video-pipeline.mjs render",
+    "video:validate-all": "node scripts/validate-video-jobs.mjs",
+    "video:qa": "node scripts/qa-video-outputs.mjs",
+    "workbench:serve": "node scripts/serve-style-preview.mjs",
+    "service:status": "node scripts/status-workbench-service.mjs",
+    "service:stop": "scripts\\stop-workbench-service.bat",
+    "service:restart": "scripts\\restart-workbench-service.bat",
+    "test": "node --test scripts/tests/*.test.mjs && py -3 scripts/tests/test_source_usage_guard.py",
+    "qa:book-reading-publishing": "node scripts/qa-book-reading-publishing-20261106.mjs",
+    "qa:device-management": "node scripts/qa-device-management-compact-20261112.cjs"
+  },
+  "allowScripts": {
+    "esbuild": false
   }
 }
