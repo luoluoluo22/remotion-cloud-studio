@@ -1,7 +1,20 @@
-name: Render AnimalFableBatch Test
+﻿name: Render AnimalFableBatch Test
 on:
   push:
     branches: [test/animal-fable-20261118]
+  workflow_dispatch:
+    inputs:
+      composition:
+        description: 'Remotion Composition ID'
+        default: 'AnimalFableBatch'
+      props_file:
+        description: 'Props JSON path'
+        default: 'props.json'
+      output_name:
+        description: 'Output MP4 filename'
+        default: 'rusty-toolbox-actions.mp4'
+permissions:
+  contents: write
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -10,19 +23,35 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Cache node_modules
+        id: cache-npm
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node22-${{ hashFiles('package.json') }}
       - name: Install Chromium & CJK Fonts
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg libnss3 libnspr4 libatk-bridge2.0-0 libdrm2 libxkbcommon0 libgbm1 libxcomposite1 libxcursor1 libxdamage1 libxi6 libxtst6 libcups2 libxss1 libxrandr2 libasound2t64 libpango-1.0-0 libcairo2 fonts-noto-cjk
       - name: Install NPM Dependencies
-        run: npm install
+        if: steps.cache-npm.outputs.cache-hit != 'true'
+        run: npm install --no-audit --no-fund
       - name: Render Video
         run: |
           mkdir -p out
-          python3 -c "import subprocess,time; t0=time.time(); subprocess.run(['npx','remotion','render','src/index.ts','AnimalFableBatch','out/rusty-toolbox-actions.mp4','--props=props.json','--codec=h264','--crf=18','--concurrency=4','--gl=angle'],check=True); print('RENDER_WALL_SECONDS='+str(round(time.time()-t0,2)))"
-          ls -lh out/rusty-toolbox-actions.mp4
-      - uses: actions/upload-artifact@v4
-        with:
-          name: rusty-toolbox-actions
-          path: out/rusty-toolbox-actions.mp4
-          retention-days: 7
+          COMP="${{ inputs.composition || 'AnimalFableBatch' }}"
+          PROPS="${{ inputs.props_file || 'props.json' }}"
+          OUT="out/${{ inputs.output_name || 'rusty-toolbox-actions.mp4' }}"
+          python3 -c "import subprocess,time; t0=time.time(); subprocess.run(['npx','remotion','render','src/index.ts','$COMP','$OUT','--props=$PROPS','--codec=h264','--crf=18','--concurrency=4','--gl=angle'],check=True); print('RENDER_WALL_SECONDS='+str(round(time.time()-t0,2)))"
+      - name: Create GitHub Release & Upload MP4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          OUT="out/${{ inputs.output_name || 'rusty-toolbox-actions.mp4' }}"
+          TAG="render-${{ github.run_id }}"
+          gh release create "$TAG" "$OUT" --title "AnimalFableBatch #$GITHUB_RUN_ID" --notes "Direct download: https://github.com/${{ github.repository }}/releases/download/$TAG/$(basename $OUT)"
+      - name: Upload to Google Drive (Optional)
+        env:
+          GDRIVE_TOKEN_JSON: ${{ secrets.GDRIVE_TOKEN_JSON }}
+          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+        run: python3 scripts/upload_gdrive.py "out/${{ inputs.output_name || 'rusty-toolbox-actions.mp4' }}"
