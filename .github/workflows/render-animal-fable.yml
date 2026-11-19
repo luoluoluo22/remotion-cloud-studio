@@ -1,0 +1,29 @@
+name: Render AnimalFableBatch Test
+on:
+  push:
+    branches: [test/animal-fable-20261118]
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - name: Install Chromium & CJK Fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg libnss3 libnspr4 libatk-bridge2.0-0 libdrm2 libxkbcommon0 libgbm1 libxcomposite1 libxcursor1 libxdamage1 libxi6 libxtst6 libcups2 libxss1 libxrandr2 libasound2t64 libpango-1.0-0 libcairo2 fonts-noto-cjk
+      - name: Install NPM Dependencies
+        run: npm ci
+      - name: Render Video
+        run: |
+          mkdir -p out
+          python3 -c "import subprocess,time; t0=time.time(); subprocess.run(['npx','remotion','render','src/index.ts','AnimalFableBatch','out/rusty-toolbox-actions.mp4','--props=props.json','--codec=h264','--crf=18','--concurrency=4','--gl=angle'],check=True); print('RENDER_WALL_SECONDS='+str(round(time.time()-t0,2)))"
+          ls -lh out/rusty-toolbox-actions.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rusty-toolbox-actions
+          path: out/rusty-toolbox-actions.mp4
+          retention-days: 7
