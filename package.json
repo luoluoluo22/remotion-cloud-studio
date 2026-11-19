@@ -10,12 +10,10 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.539",
-    "@elevenlabs/elevenlabs-js": "^1.50.0",
     "dotenv": "^16.4.7",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "remotion": "4.0.539",
-    "ws": "^8.21.0"
+    "remotion": "4.0.539"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.539",
