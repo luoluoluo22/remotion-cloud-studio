@@ -1,8 +1,16 @@
-name: Cloud Video Render
+﻿name: Cloud Video Render
 
 on:
   workflow_dispatch:
     inputs:
+      composition:
+        description: 'Remotion Composition'
+        required: true
+        default: 'CloudVideo'
+        type: choice
+        options:
+          - 'CloudVideo'
+          - 'PapercraftVertical'
       title:
         description: 'Video Title'
         required: true
@@ -55,6 +63,8 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq \
             ffmpeg \
+            libgl1 \
+            libegl1 \
             libnss3 \
             libatk-bridge2.0-0 \
             libdrm2 \
@@ -93,7 +103,7 @@ jobs:
       - name: Render Video with Remotion
         run: |
           mkdir -p out
-          npx remotion render src/index.ts CloudVideo out/video.mp4 \
+          npx remotion render src/index.ts "${{ inputs.composition }}" out/video.mp4 \
             --props=public/metadata.json \
             --concurrency=2 \
             --gl=angle \
@@ -113,8 +123,9 @@ jobs:
           TAG_NAME="run-${{ github.run_id }}"
           gh release create "$TAG_NAME" out/video.mp4 \
             --title "${{ inputs.title }} (Run #${{ github.run_id }})" \
-            --notes "🎬 Rendered via GitHub Actions.
+            --notes "🎬 Rendered via GitHub Actions (${{ inputs.composition }}).
             - **Title**: ${{ inputs.title }}
             - **Voice**: ${{ inputs.voice }}
             - **Timestamp**: $(date -u)
             - **Direct Download**: https://github.com/${{ github.repository }}/releases/download/$TAG_NAME/video.mp4"
+

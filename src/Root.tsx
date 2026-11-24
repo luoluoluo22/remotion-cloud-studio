@@ -1,8 +1,8 @@
-import React from 'react';
+﻿import React from 'react';
 import { Composition } from 'remotion';
 import { VideoComponent, VideoProps } from './VideoComponent';
+import { PapercraftScene } from './PapercraftScene';
 
-// Fallback / default metadata
 const defaultProps: VideoProps = {
   title: 'AI 自动化云端视频工作台',
   subtitle: 'GitHub Actions 自动脱机渲染 · 零本地负载',
@@ -13,26 +13,48 @@ const defaultProps: VideoProps = {
 
 export const RemotionRoot: React.FC = () => {
   return (
-    <Composition
-      id="CloudVideo"
-      component={VideoComponent}
-      durationInFrames={360}
-      fps={30}
-      width={1280}
-      height={720}
-      defaultProps={defaultProps}
-      calculateMetadata={async ({ props }) => {
-        // If metadata.json has durationInFrames, use it
-        const customProps = props as any;
-        const durationInFrames = customProps.durationInFrames || 360;
-        return {
-          durationInFrames,
-          fps: customProps.fps || 30,
-          width: customProps.width || 1280,
-          height: customProps.height || 720,
-          props,
-        };
-      }}
-    />
+    <>
+      <Composition
+        id="CloudVideo"
+        component={VideoComponent}
+        durationInFrames={360}
+        fps={30}
+        width={1280}
+        height={720}
+        defaultProps={defaultProps}
+        calculateMetadata={async ({ props }) => {
+          const customProps = props as any;
+          return {
+            durationInFrames: customProps.durationInFrames || 360,
+            fps: customProps.fps || 30,
+            width: customProps.width || 1280,
+            height: customProps.height || 720,
+            props,
+          };
+        }}
+      />
+      <Composition
+        id="PapercraftVertical"
+        component={PapercraftScene}
+        durationInFrames={300}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          ...defaultProps,
+          subtitle: 'GitHub Actions 云端 3D 折纸立体书渲染',
+        }}
+        calculateMetadata={async ({ props }) => {
+          const customProps = props as any;
+          return {
+            durationInFrames: customProps.durationInFrames || 300,
+            fps: customProps.fps || 30,
+            width: 1080,
+            height: 1920,
+            props,
+          };
+        }}
+      />
+    </>
   );
 };
