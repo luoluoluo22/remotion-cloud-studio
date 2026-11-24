@@ -106,7 +106,7 @@ jobs:
           npx remotion render src/index.ts "${{ inputs.composition }}" out/video.mp4 \
             --props=public/metadata.json \
             --concurrency=2 \
-            --gl=angle \
+            --gl=swangle \
             --log=info
 
       - name: Upload Artifact
@@ -128,4 +128,5 @@ jobs:
             - **Voice**: ${{ inputs.voice }}
             - **Timestamp**: $(date -u)
             - **Direct Download**: https://github.com/${{ github.repository }}/releases/download/$TAG_NAME/video.mp4"
+
 
